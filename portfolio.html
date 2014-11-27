@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/trad-portfolio.css"/>
+
+<header>
+    <title>Traditional Art Portfolio</title>
+    <a id="home" href="index.html">Home</a>
+    <h1>Traditional Art Portfolio</h1>
+</header>
+
+<body>
+    <div id="container">
+      <div class="item"><img src="img/trad/part2.jpg"/>           </div>
+      <div class="item"><img src="img/trad/self.jpg"></div>
+      <div class="item"><img src="img/trad/4turn.jpg"></div>
+      <div class="item"><img src="img/trad/pennpark.jpg">         </div>
+      <div class="item"><img src="img/trad/13th Lounge.jpg">       </div>
+      <div class="item"><img src="img/trad/paper.jpg"></div>
+      <div class="item"><img src="img/trad/flowers.jpg">           </div>
+      <div class="item"><img src="img/trad/owl.jpg"></div>
+      <div class="item"><img src="img/trad/flower pot.jpg">       </div>
+      <div class="item"><img src="img/trad/still life 2.jpg">
+      </div>
+      <div class="item"><img src="img/trad/girl face.jpg">         </div>
+      <div class="item"><img src="img/trad/sculpture.jpg">         </div>
+      <div class="item"><img src="img/trad/still life.jpg">       </div>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/packery.pkgd.min.js">
+    </script>
+    <script>
+        var $container = $('#container');                           $container.imagesLoaded(function() {
+          $container.packery({
+              itemSelector: '.item',
+              gutter: 10});
+        });
+    </script>
+</body>

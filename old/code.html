@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<!--CSS and Font imports-->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<script class="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<!--portfolio viewer-->
+	<link rel="stylesheet" type="text/css" href="css/immersive-slider.css"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+
+<header>
+	<title>Code Portfolio</title>
+    <h1>Coding Projects<br> <span>Annie Meng</span></h1>
+    <h2><a id="home" href="index.html">home</a></h2>
+</header>
+
+<body>
+    <div class="main">
+        <div id="immersive_slider">
+					<div class="slide">
+						<div class="content">
+							<h2>Decision Bot</h2>
+							<p>Decision generator created in JavaScript (Backbone.js, Underscore.js). Images created using Illustrator <br></br> Features:
+								<br> - Animation upon user input <br> - Editing modes and decision choices.<br></br> Live demo: <a href="https://decision-bot.herokuapp.com">decision-bot.herokuapp.com </a></p>
+						</div>
+						<div class="image">
+								<img src="img/decision.png" alt="Slider 1">
+						</div>
+					</div>
+          <div class="slide">
+            <div class="content">
+              <h2>Coffee Time</h2>
+              <p>Time management game created in Java. Images digitally drawn using pixel art. <br></br> Features:
+              	<br> - Create orders that appear above customer's heads. <br> - Click item labels to make them appear in creation space. <br> - Created items appear on conveyor belt and have conveyor animation. <br> - Reci
+								ipe book and grocery shopping abilities </p>
+            </div>
+            <div class="image">
+                <img src="img/game.png" alt="Slider 2">
+            </div>
+          </div>
+          <div class="slide">
+            <div class="content">
+              <h2>Coming Soon</h2>
+              <p>This section is currently under development!</p>
+							<p>Github: <a href="https://github.com/anniemeng">@anniemeng</a>
+            </div>
+          </div>
+        </div>
+  	</div>
+
+<script>
+$("#immersive_slider").immersive_slider({
+  animation: "slide", // As usual, you can change the animation to these: slide (default), bounce, fade, slideUp, and bounceUp
+  slideSelector: ".slide", // This option will let you assign custom selector for each slides in case .slide is already taken
+  container: ".main", // This option lets you define the container of which the background will appear. Make sure the slider is inside this container as well.
+  cssBlur: false, // Experimental: In case you don't want to keep adding new data-blurred attributes, trigger this to true and it will generate the blur image on the fly (more info below).
+  pagination: true, // Toggle this to false if you don't want a pagination
+  loop: true, // Toggle to false if you don't want the slider to loop. Default is true.
+  autoStart: 0 // Define the number of milliseconds before it navigates automatically. Change this to 0 or false to disable autoStart. The default value is 5000.
+});
+</script>
+</body>

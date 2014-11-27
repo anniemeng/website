@@ -1,0 +1,55 @@
+@import "../../scss/general";
+
+#intro {
+    margin-top: 3em;
+}
+
+p {
+    color:$asher;
+    font-size:25px;
+    font-family:$header-font;
+    text-transform:uppercase;
+    text-align: center;
+    padding: 0 1em;
+    margin-bottom:0;
+}
+
+/*** CATEGORIES ***/
+#category {
+    @include outer-container;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.research, .blog {
+    @include span-columns(6);
+}
+
+h2 {
+    color:$educ;
+    font-size:30px;
+    font-family:$header-font;
+    font-weight:normal;
+    text-transform:uppercase;
+    text-align: center;
+    background-color:$general;
+    border: 0.2em double $educ;
+    padding:1em;
+    margin-bottom:0.5em;
+}
+
+/*** RESEARCH ***/
+.research {
+}
+
+a {
+    display:block;
+    color:$asher;
+    font-family: $header-font;
+    text-align: center;
+    padding:0.5em;
+    
+    &:hover {
+        color:$educ;
+    }
+}

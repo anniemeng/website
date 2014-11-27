@@ -1,0 +1,763 @@
+@import url(http://fonts.googleapis.com/css?family=Chivo);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,100);
+/* line 55, ../scss/general/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 63, ../scss/general/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 74, ../scss/general/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 84, ../scss/general/_normalize.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 97, ../scss/general/_normalize.scss */
+html {
+  background: white;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 113, ../scss/general/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 119, ../scss/general/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 132, ../scss/general/_normalize.scss */
+a {
+  background: transparent;
+}
+/* line 139, ../scss/general/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 146, ../scss/general/_normalize.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 159, ../scss/general/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 164, ../scss/general/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 169, ../scss/general/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 174, ../scss/general/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 179, ../scss/general/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 184, ../scss/general/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* line 192, ../scss/general/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 199, ../scss/general/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 211, ../scss/general/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 217, ../scss/general/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 236, ../scss/general/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 246, ../scss/general/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 254, ../scss/general/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 271, ../scss/general/_normalize.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 279, ../scss/general/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 287, ../scss/general/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 294, ../scss/general/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 298, ../scss/general/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 350, ../scss/general/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 359, ../scss/general/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 369, ../scss/general/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 386, ../scss/general/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 397, ../scss/general/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 414, ../scss/general/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* line 426, ../scss/general/_normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 436, ../scss/general/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 451, ../scss/general/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 462, ../scss/general/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 470, ../scss/general/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 479, ../scss/general/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 490, ../scss/general/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 498, ../scss/general/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 507, ../scss/general/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/* line 517, ../scss/general/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+/* line 1, ../scss/base/extends/_button.scss */
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477dca;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+}
+/* line 13, ../scss/base/extends/_button.scss */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #2c5999;
+  color: white;
+}
+/* line 18, ../scss/base/extends/_button.scss */
+button:disabled,
+input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* line 1, ../scss/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 15, ../scss/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 22, ../scss/base/_typography.scss */
+h1 {
+  font-size: 2.25em;
+}
+
+/* line 26, ../scss/base/_typography.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 30, ../scss/base/_typography.scss */
+h3 {
+  font-size: 1.75em;
+}
+
+/* line 34, ../scss/base/_typography.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 38, ../scss/base/_typography.scss */
+h5 {
+  font-size: 1.25em;
+}
+
+/* line 42, ../scss/base/_typography.scss */
+h6 {
+  font-size: 1em;
+}
+
+/* line 46, ../scss/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 50, ../scss/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477dca;
+  text-decoration: none;
+}
+/* line 55, ../scss/base/_typography.scss */
+a:hover {
+  color: #2c5999;
+}
+/* line 59, ../scss/base/_typography.scss */
+a:active, a:focus {
+  color: #2c5999;
+  outline: none;
+}
+
+/* line 66, ../scss/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 71, ../scss/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em;
+}
+
+/* line 78, ../scss/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic;
+}
+/* line 82, ../scss/base/_typography.scss */
+cite:before {
+  content: "\2014 \00A0";
+}
+
+/* line 1, ../scss/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em;
+}
+
+/* line 10, ../scss/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+}
+
+/* line 16, ../scss/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em;
+}
+/* line 20, ../scss/base/_forms.scss */
+label.required:after {
+  content: "*";
+}
+/* line 24, ../scss/base/_forms.scss */
+label abbr {
+  display: none;
+}
+
+/* line 31, ../scss/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%;
+}
+/* line 44, ../scss/base/_forms.scss */
+textarea:hover,
+input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+select[multiple=multiple]:hover {
+  border-color: #c4c4c4;
+}
+/* line 48, ../scss/base/_forms.scss */
+textarea:focus,
+input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+select[multiple=multiple]:focus {
+  border-color: #477dca;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+  outline: none;
+}
+
+/* line 55, ../scss/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 59, ../scss/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 64, ../scss/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 69, ../scss/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 74, ../scss/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 1, ../scss/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, ../scss/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, ../scss/base/_tables.scss */
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0;
+}
+
+/* line 22, ../scss/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 2, ../scss/base/_lists.scss */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 20, ../scss/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 23, ../scss/base/_lists.scss */
+dl dt {
+  font-weight: bold;
+  margin-top: 0.75em;
+}
+/* line 28, ../scss/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 2, ../scss/base/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* line 2, ../scss/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*******TOP HEADING********/
+/* line 8, ../scss/landing.scss */
+body {
+  font-family: "Chivo", sans-serif;
+}
+
+/* line 12, ../scss/landing.scss */
+a {
+  color: #2abb9b;
+  text-decoration: none;
+}
+
+/* line 17, ../scss/landing.scss */
+header {
+  text-align: center;
+  background-color: #2abb9b;
+  color: #fff;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+/* line 25, ../scss/landing.scss */
+h1 {
+  font-size: 500%;
+}
+
+/***** ABOUT *****/
+/* line 30, ../scss/landing.scss */
+#about {
+  padding: 7em 2em;
+  color: #555f61;
+  text-align: center;
+}
+/* line 35, ../scss/landing.scss */
+#about a:hover {
+  color: #555f61;
+}
+
+/* line 40, ../scss/landing.scss */
+#greet {
+  font-size: 300%;
+  padding-bottom: 0.5em;
+}
+
+/* line 45, ../scss/landing.scss */
+#links {
+  padding-top: 1em;
+}
+
+@media (max-width: 350px) {
+  /* line 51, ../scss/landing.scss */
+  h1, #greet {
+    font-size: 130%;
+  }
+
+  /* line 55, ../scss/landing.scss */
+  h2, p {
+    font-size: 80%;
+  }
+}
+@media (min-width: 350px) and (max-width: 500px) {
+  /* line 61, ../scss/landing.scss */
+  h1 {
+    font-size: 250%;
+  }
+
+  /* line 65, ../scss/landing.scss */
+  #greet {
+    font-size: 200%;
+  }
+
+  /* line 69, ../scss/landing.scss */
+  h2 {
+    font-size: 100%;
+  }
+
+  /* line 73, ../scss/landing.scss */
+  .descrip p, .button {
+    font-size: 80%;
+  }
+}
+@media (min-width: 500px) and (max-width: 690px) {
+  /* line 79, ../scss/landing.scss */
+  h1 {
+    font-size: 300%;
+  }
+
+  /* line 83, ../scss/landing.scss */
+  #greet {
+    font-size: 230%;
+  }
+
+  /* line 87, ../scss/landing.scss */
+  h2 {
+    font-size: 130%;
+  }
+}
+@media (min-width: 690px) and (max-width: 930px) {
+  /* line 93, ../scss/landing.scss */
+  h1 {
+    font-size: 400%;
+  }
+
+  /* line 97, ../scss/landing.scss */
+  #greet {
+    font-size: 250%;
+  }
+
+  /* line 101, ../scss/landing.scss */
+  h2 {
+    font-size: 150%;
+  }
+}
+/**** PORTFOLIO ***/
+/* line 107, ../scss/landing.scss */
+#port {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  padding: 2em 0em;
+  background: #555f61;
+  color: white;
+  font-size: 150%;
+}
+/* line 15, ../scss/bourbon/addons/_clearfix.scss */
+#port:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 115, ../scss/landing.scss */
+#port a:hover {
+  color: white;
+}
+
+@media (min-width: 1100px) {
+  /* line 122, ../scss/landing.scss */
+  #port {
+    padding: 2em 5em;
+  }
+}
+/* line 128, ../scss/landing.scss */
+.descrip {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  text-align: center;
+  margin: 0;
+  padding: 2em 0;
+}
+/* line 38, ../scss/neat/grid/_span-columns.scss */
+.descrip:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 800px) {
+  /* line 137, ../scss/landing.scss */
+  .descrip {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  /* line 38, ../scss/neat/grid/_span-columns.scss */
+  .descrip:last-child {
+    margin-right: 0;
+  }
+}
+/* line 142, ../scss/landing.scss */
+hr {
+  width: 3em;
+}
+
+/* line 146, ../scss/landing.scss */
+p {
+  margin-bottom: 0;
+}

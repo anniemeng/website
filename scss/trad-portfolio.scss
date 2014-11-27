@@ -1,0 +1,39 @@
+@import "general/normalize";
+@import "general/variables";
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+
+header {
+    background-color: $asher;
+    color: $general;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:$header-font;
+}
+
+h1 {
+    padding: 3em;
+    font-size: 300%;
+    font-weight: 700;
+}
+
+#home {
+    top: 0;
+    padding-top:1em;
+    margin-right:1em;
+    margin-top:0;
+    float:right;
+    text-decoration:none;
+    font-size:20px;
+    color:$general;
+}
+
+#container {
+    padding-top:1em;
+    padding-left:0.5em;
+}
+
+.item {
+    width:32.5%;
+}

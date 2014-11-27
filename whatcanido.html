@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Demo</title>
+
+	<!--CSS/SCSS-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Lato|Cabin|Raleway|Open+Sans+Condensed:300' rel='stylesheet'>
+
+</head>
+
+<body>
+	<header>
+		<h1>Play Around</h1>
+		<h3>Or test these websites out:</h3>
+		<h3><a href="../minimal/index.html">Clean & mean.</a></h3>
+		<h3><a href="../effectssite/index.html">Would you like some effects with that?</a></h3><br>
+		<h3>(Currently in development)</h3>
+    <nav>
+		</nav>
+	</header>
+
+  <!--BUTTONS-->
+	<section class="row">
+		<h2>Buttons</h2>
+		<button class="btn a a1">Lighten</button>
+		<button class="btn a a2">Darken</button>
+		<br>
+		<button class="btn a a3">Lighten</button>
+		<button class="btn a a4">Darken</button>
+		<br>
+		<button class="btn b b1">Solid</button>
+		<button class="btn b b2">Double</button>
+		<div class="break1">
+		<button class="btn b b3">Dotted</button>
+		<button class="btn b b4">Dashed</button>
+		</div>
+		<br>
+		<button class="btn b b5">Solid</button>
+		<button class="btn b b6">Double</button>
+		<div class="break1">
+		<button class="btn b b7">Dotted</button>
+		<button class="btn b b8">Dashed</button>
+		</div>
+		<br>
+		<button class="btn c c1">3D Down</button>
+		<button class="btn c c2">3D Up</button>
+		<br>
+		<button class="btn c c3">D</button>
+		<button class="btn c c4">U</button>
+		<br>
+		<button class="btn d d1">Down</button>
+		<button class="btn d d2">Right</button>
+		<div class="break2">
+		<button class="btn d d3">Left</button>
+		<button class="btn d d4">Up</button>
+		</div>
+	</section>
+
+	<!--NAVIGATION-->
+	<section class="row">
+		<h2>Navigation</h2>
+		<nav id="nav1">
+		  <ul id="expand">
+				<li><a href="#" onClick="return false;">Home</a></li>
+				<li><a href="#" onClick="return false;">About</a></li>
+				<li>
+					<a href="#" class="pressed" onClick="return false;">Work<span id="arrow"></span></a>
+						<div id="div">
+						<ul>
+							<li><a href="#" onClick="return false;">Art</a></li>
+							<li><a href="#" onClick="return false;">Code</a></li>
+						</ul>
+						</div>
+				</li>
+				<li><a href="#" onClick="return false;">Contact</a></li>
+			</ul>
+		</nav>
+
+		<nav id="nav2">
+			<ul>
+				<li><a id="one" href="#" onClick="return false;">Home<small>This Way</small></a></li><!--
+				--><li><a id="two" href="#" onClick="return false;">About<small>Me</small></a></li><!--
+				--><div><li><a id="three" href="#" onClick="return false;">Work<small>Hard</small></a></li><!--
+				--><li><a id="four" href="#" onClick="return false;">Contact<small>Holla</small></a></li></div>
+			</ul>
+		</nav>
+
+		<nav id="nav3">
+			<ul id="outer">
+				<li><a href="#" onClick="return false;">Home</a></li>
+				<li>
+					<a class="down" href="#" onClick="return false;">About</a>
+					<ul>
+						<li><a href="#" onClick="return false;">Bio</a></li>
+						<li><a href="#" onClick="return false;">Resume</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="down" href="#" onClick="return false;">Work</a>
+						<ul>
+							<li><a href="#" onClick="return false;">Art</a></li>
+							<li><a href="#" onClick="return false;">Code</a></li>
+						</ul>
+				</li>
+				<li><a href="#" onClick="return false;">Contact</a></li>
+			</ul>
+		</nav>
+
+	</section>
+
+	<!--FORMS-->
+	<section class="row">
+		<h2>Forms</h2>
+	</section>
+
+	<!--INPUT-->
+	<section class="row">
+		<h2>Input</h2>
+	</section>
+
+	<!--JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+
+	$(function() {
+    var nav3_ul = $('#outer > li > ul'),
+				nav3_a  = $('#outer > li > a');
+
+    nav3_ul.hide();
+
+    nav3_a.click(function(e) {
+        e.preventDefault();
+        if(!$(this).hasClass('active')) {
+          nav3_a.removeClass('active');
+          nav3_ul.slideUp(400);
+          $(this).addClass('active').next().stop(true,true).slideDown(400);
+        } else {
+          	$(this).removeClass('active');
+            $(this).next().stop(true,true).slideUp(400);
+        }
+    });
+
+		if ($(window).width() < 650) {
+			var nav1_ul = $('#expand div'),
+					nav1_a  = $('#expand > li > a');
+			nav1_ul.hide();
+			nav1_a.click(function(e) {
+				e.preventDefault();
+				if(!$(this).hasClass('act')) {
+					nav1_a.removeClass('act');
+					nav1_ul.slideUp(400);
+					$(this).addClass('act').next().stop(true,true).slideDown(400);
+				} else {
+						$(this).removeClass('act');
+						$(this).next().stop(true,true).slideUp(400);
+				}
+		});
+	}
+
+	});
+
+</script>
+</body>

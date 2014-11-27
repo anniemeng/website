@@ -1,0 +1,203 @@
+$primary: 'Lato', Palatino, sans-serif;
+
+body {
+  font-family:$primary;
+  color:#2B2B2B;
+}
+
+/***TOP HEADING ***/
+header {
+  padding:5%;
+  text-align:center;
+  color:#727273;
+
+  a {
+    font-weight:300;
+    font-size:100%;
+    text-decoration:none;
+    color:#727273;
+  }
+}
+
+h1 {
+  font-size:400%;
+  font-weight:300;
+  text-transform:uppercase;
+}
+
+@media (max-width:500px) {
+  h1 {
+    font-size:300%;
+  }
+}
+
+
+/****CONTENT*****/
+.project1 {
+  display:block;
+  margin: 10% 5%;
+
+  img {
+    position:relative;
+    float:left;
+    width:45%;
+  }
+
+  .descrip {
+    display:inline-block;
+    position:relative;
+    width:50%;
+    margin:1%;
+    margin-top:0;
+    padding-left:3%;
+    float:right;
+
+    h2 {
+      margin-top:2%;
+      margin-bottom:5%;
+      font-size:200%;
+    }
+
+    p {
+      font-size:100%;
+    }
+
+    a {
+      color:#2B2B2B;
+    }
+  }
+}
+
+/*****PROJECT TWO******/
+.project2 {
+  display:block;
+  margin: 10% 5%;
+
+  h2 {
+    margin-top:2%;
+    margin-bottom:0;
+    font-size:200%;
+  }
+
+  img {
+    position:relative;
+    display:inline-block;
+    float:left;
+    width:45%;
+    clear:left;
+  }
+
+  .descrip {
+    display:inline-block;
+    position:relative;
+    width:50%;
+    margin: 1%;
+    margin-top:0;
+    padding-left:3%;
+    float:right;
+    clear:right;
+
+    p {
+      font-size:100%;
+    }
+
+    a {
+      color:#2B2B2B;
+    }
+  }
+}
+
+/*****CONTAIN*****/
+.project1:before,
+.project1:after,
+.project2:before,
+.project2:after {
+  content: "";
+  display: table;
+}
+
+.project1:after,
+.project2:after {
+  clear: both;
+}
+
+.project1,
+.project2 {
+  clear: both;
+  *zoom: 1;
+}
+
+hr {
+  width:70%;
+}
+
+/*****RESPONSIVE CONTENT******/
+@media (max-width:500px) {
+  .project1 .descrip,
+  .project2 .descrip {
+    h2 {
+      font-size:140%;
+    }
+
+    p {
+      font-size:80%;
+    }
+  }
+}
+
+@media (min-width:500px) and (max-width:650px) {
+  .project1 .descrip,
+  .project2 .descrip {
+    h2 {
+      font-size:150%;
+    }
+
+    p {
+      font-size:90%;
+    }
+  }
+}
+
+
+@media (max-width:820px) {
+  .project1, .project2 {
+    width:60%;
+    margin: 10% auto;
+  }
+
+  .project1 img,
+  .project2 img {
+    display:block;
+    width:100%;
+    margin: 0 auto;
+    float:center;
+  }
+
+  .project1 .descrip,
+  .project2 .descrip {
+    display:block;
+    width:100%;
+    margin-left:0;
+    padding-left:0;
+    float:left;
+
+    h2 {
+      margin-top:5%;
+      text-align:center;
+    }
+  }
+}
+
+
+@media (min-width:1300px) {
+  .project1 .descrip,
+  .project2 .descrip {
+    h2 {
+      font-size:250%;
+    }
+
+    p {
+      font-size:115%;
+    }
+  }
+}

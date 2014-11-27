@@ -1,0 +1,402 @@
+/* line 4, ../scss/main.scss */
+body {
+  color: #fff;
+  overflow-x: hidden;
+}
+/* line 8, ../scss/main.scss */
+body h1 {
+  margin-top: 0;
+}
+
+/***FIRST SECTION***/
+/**BACKGROUND DISPLAY**/
+/* line 15, ../scss/main.scss */
+#landing {
+  width: 100%;
+  height: 100%;
+  background: url("../img/back.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* line 22, ../scss/main.scss */
+#overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/***LANDING TEXT***/
+/* line 31, ../scss/main.scss */
+#centered {
+  position: absolute;
+  margin: auto;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+/* line 40, ../scss/main.scss */
+#centered h1 {
+  margin-bottom: 1%;
+  font-size: 500%;
+}
+/* line 45, ../scss/main.scss */
+#centered hr {
+  width: 40%;
+  height: 3px;
+  border: none;
+  background-color: #fff;
+  color: #fff;
+}
+/* line 53, ../scss/main.scss */
+#centered h2 {
+  margin-top: 1.5%;
+  font-size: 150%;
+  font-weight: 300;
+  padding-bottom: 10%;
+}
+
+/* line 61, ../scss/main.scss */
+#arrow {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 80%;
+  color: #fff;
+}
+
+@media (max-width: 450px) {
+  /* line 76, ../scss/main.scss */
+  #centered h1 {
+    font-size: 300%;
+  }
+  /* line 80, ../scss/main.scss */
+  #centered h2 {
+    font-size: 125%;
+  }
+}
+@media (min-width: 450px) and (max-width: 1080px) {
+  /* line 87, ../scss/main.scss */
+  #centered h1 {
+    font-size: 400%;
+  }
+}
+/****NAVIGATION***/
+/* line 94, ../scss/main.scss */
+nav ul {
+  margin-top: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+/* line 103, ../scss/main.scss */
+nav li {
+  display: inline-block;
+  padding: 0 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+/* line 109, ../scss/main.scss */
+nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 115, ../scss/main.scss */
+nav li a:hover {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 550px) {
+  /* line 123, ../scss/main.scss */
+  nav li {
+    padding: 2%;
+  }
+}
+/****SECOND SECTION****/
+/* line 129, ../scss/main.scss */
+#about {
+  background-color: #363636;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+/* line 135, ../scss/main.scss */
+#about-title {
+  opacity: 0;
+  width: 100%;
+  height: 10%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  font-size: 200%;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 145, ../scss/main.scss */
+#about-title hr {
+  width: 30%;
+}
+
+/* line 150, ../scss/main.scss */
+#about1, #about2, #about3 {
+  display: inline-block;
+  width: 200px;
+  max-height: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5% 2%;
+  padding-top: 1%;
+  color: #fff;
+  opacity: 0;
+}
+
+/* line 162, ../scss/main.scss */
+#descrip {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* line 167, ../scss/main.scss */
+.title {
+  border: 3px double #fff;
+  padding: 10% 15%;
+}
+
+/* line 172, ../scss/main.scss */
+.description {
+  display: inline-block;
+  padding-top: 10%;
+  line-height: 1.5em;
+}
+
+/* line 178, ../scss/main.scss */
+.title:hover {
+  background-color: #fff;
+  color: #494B4D;
+  border-color: #494B4D;
+}
+
+@media (max-width: 775px) {
+  /* line 187, ../scss/main.scss */
+  #about-title {
+    padding-top: 7%;
+  }
+
+  /* line 191, ../scss/main.scss */
+  #about1, #about2, #about3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 7%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 201, ../scss/main.scss */
+  .title {
+    padding: 3%;
+  }
+
+  /* line 205, ../scss/main.scss */
+  .description {
+    display: block;
+    padding: 4% 5%;
+  }
+}
+@media (max-width: 890px) {
+  /* line 212, ../scss/main.scss */
+  #about1, #about2, #about3 {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+@media (min-width: 890px) and (max-width: 1065px) {
+  /* line 219, ../scss/main.scss */
+  #about1, #about2, #about3 {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+/*****THIRD SECTION****/
+/* line 226, ../scss/main.scss */
+#port-title {
+  font-family: "Lato", sans-serif;
+  color: #636363;
+  opacity: 0;
+  width: 100%;
+  height: 10%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  font-size: 200%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 239, ../scss/main.scss */
+#container {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* line 245, ../scss/main.scss */
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+  opacity: 0;
+}
+
+/* line 249, ../scss/main.scss */
+.item {
+  position: relative;
+  width: 33.3%;
+  height: 50%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+/* line 258, ../scss/main.scss */
+.item img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*text hover*/
+/* line 267, ../scss/main.scss */
+.text-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  border: none;
+}
+/* line 281, ../scss/main.scss */
+.text-img p {
+  padding-top: 25%;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 200%;
+  line-height: 1.5em;
+}
+
+/* line 291, ../scss/main.scss */
+.item:hover .text-img {
+  opacity: 1;
+}
+
+@media (max-width: 775px) {
+  /* line 298, ../scss/main.scss */
+  .item {
+    width: 70%;
+    height: 15.67%;
+    text-align: center;
+    margin: 2% auto;
+    float: center;
+  }
+
+  /* line 307, ../scss/main.scss */
+  .text-img p {
+    padding-top: 20%;
+    font-size: 150%;
+  }
+}
+@media (min-width: 775px) and (max-width: 1000px) {
+  /* line 315, ../scss/main.scss */
+  .item {
+    width: 50%;
+    height: 33.33%;
+  }
+}
+/****FOURTH SECTION*****/
+/* line 323, ../scss/main.scss */
+#contact {
+  background-color: #363636;
+}
+/* line 326, ../scss/main.scss */
+#contact h1 {
+  font-family: "Lato", sans-serif;
+  opacity: 0;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-bottom: 0;
+  font-size: 200%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 339, ../scss/main.scss */
+#icon {
+  display: table;
+  margin: 0 auto;
+  float: center;
+}
+
+/* line 345, ../scss/main.scss */
+#fb {
+  opacity: 0;
+  background-image: url("../icon/fb-effect.png");
+  width: 121px;
+  height: 122px;
+  float: left;
+}
+
+/* line 353, ../scss/main.scss */
+#fb:hover {
+  background-image: url("../icon/facebook.png");
+}
+
+/* line 357, ../scss/main.scss */
+#twitter {
+  opacity: 0;
+  background-image: url("../icon/twitter-effect.png");
+  width: 121px;
+  height: 122px;
+  float: left;
+}
+
+/* line 365, ../scss/main.scss */
+#twitter:hover {
+  background-image: url("../icon/twitter.png");
+}
+
+/* line 369, ../scss/main.scss */
+#insta {
+  opacity: 0;
+  background-image: url("../icon/insta-effect.png");
+  width: 121px;
+  height: 122px;
+  float: left;
+}
+
+/* line 377, ../scss/main.scss */
+#insta:hover {
+  background-image: url("../icon/instagram.png");
+}
+
+@media (max-width: 450px) {
+  /* line 383, ../scss/main.scss */
+  #fb, #insta, #twitter {
+    width: 90.75;
+    height: 91.5;
+  }
+}
