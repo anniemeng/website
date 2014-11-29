@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Chivo);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,100);
 /*** IMPORTS ***/
 /* line 55, ../../scss/general/_normalize.scss */
 article,
@@ -619,12 +620,12 @@ hr {
   font-size: 20px;
 }
 
-/* line 3, ../scss/education-main.scss */
+/* line 3, ../_sass/education-main.scss */
 #intro {
   margin-top: 3em;
 }
 
-/* line 7, ../scss/education-main.scss */
+/* line 7, ../_sass/education-main.scss */
 p {
   color: #555f61;
   font-size: 25px;
@@ -636,13 +637,14 @@ p {
 }
 
 /*** CATEGORIES ***/
-/* line 18, ../scss/education-main.scss */
+/* line 19, ../_sass/education-main.scss */
 #category {
-  max-width: 68em;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
   margin-bottom: 3em;
+  padding: 0 4em;
 }
 /* line 15, ../../scss/bourbon/addons/_clearfix.scss */
 #category:after {
@@ -651,7 +653,7 @@ p {
   clear: both;
 }
 
-/* line 24, ../scss/education-main.scss */
+/* line 26, ../_sass/education-main.scss */
 .research, .blog {
   float: left;
   display: block;
@@ -663,7 +665,21 @@ p {
   margin-right: 0;
 }
 
-/* line 28, ../scss/education-main.scss */
+@media (max-width: 900px) {
+  /* line 31, ../_sass/education-main.scss */
+  .research, .blog {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding-bottom: 2em;
+  }
+  /* line 38, ../../scss/neat/grid/_span-columns.scss */
+  .research:last-child, .blog:last-child {
+    margin-right: 0;
+  }
+}
+/* line 37, ../_sass/education-main.scss */
 h2 {
   color: #690404;
   font-size: 30px;
@@ -678,7 +694,7 @@ h2 {
 }
 
 /*** RESEARCH ***/
-/* line 45, ../scss/education-main.scss */
+/* line 54, ../_sass/education-main.scss */
 a {
   display: block;
   color: #555f61;
@@ -686,7 +702,41 @@ a {
   text-align: center;
   padding: 0.5em;
 }
-/* line 52, ../scss/education-main.scss */
+/* line 61, ../_sass/education-main.scss */
 a:hover {
   color: #690404;
+}
+
+/**** MEDIA QUERIES ****/
+@media (max-width: 400px) {
+  /* line 69, ../_sass/education-main.scss */
+  h1 {
+    font-size: 38px;
+  }
+
+  /* line 74, ../_sass/education-main.scss */
+  p, h2 {
+    font-size: 15px;
+  }
+
+  /* line 78, ../_sass/education-main.scss */
+  a {
+    font-size: 13px;
+  }
+}
+@media (min-width: 400px) and (max-width: 620px) {
+  /* line 84, ../_sass/education-main.scss */
+  h1 {
+    font-size: 50px;
+  }
+
+  /* line 88, ../_sass/education-main.scss */
+  p, h2 {
+    font-size: 20px;
+  }
+
+  /* line 92, ../_sass/education-main.scss */
+  a {
+    font-size: 15px;
+  }
 }

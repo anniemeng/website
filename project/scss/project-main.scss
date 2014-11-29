@@ -41,19 +41,6 @@ h2 {
     @include omega(3n);
   }
 
-  .card-image {
-    overflow: hidden;
-    max-height: 150px;
-
-    img {
-      width: 100%;
-      @include transition (all 0.2s ease-in-out);
-      //background: $card-image-background;
-      //border-top-left-radius: $base-border-radius;
-      //border-top-right-radius: $base-border-radius;
-    }
-  }
-
   .card-header {
     @include transition (all 0.2s ease-in-out);
     background-color: $card-header-background;
@@ -73,6 +60,10 @@ h2 {
     a {
         color:$general;
         text-decoration: underline;
+        
+        &:hover {
+            color:$card-header-background;
+        }
     }
   }
 

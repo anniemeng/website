@@ -582,198 +582,521 @@ input[type="submit"] {
   box-sizing: border-box;
 }
 
-/*******TOP HEADING********/
-/* line 8, ../scss/landing.scss */
-body {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-}
-
-/* line 12, ../scss/landing.scss */
-a {
-  color: #2abb9b;
-  text-decoration: none;
-}
-
-/* line 17, ../scss/landing.scss */
+/***** HEADING ****/
+/* line 12, ../scss/style.scss */
 header {
+  background-color: #555f61;
+  color: white;
   text-align: center;
-  background-color: #2abb9b;
-  color: #fff;
-  margin: 0 auto;
-  padding: 5%;
+  text-transform: uppercase;
+  font-family: "Chivo", sans-serif;
 }
 
-/* line 25, ../scss/landing.scss */
+/* line 20, ../scss/style.scss */
 h1 {
-  font-size: 500%;
-}
-
-/***** ABOUT *****/
-/* line 30, ../scss/landing.scss */
-#about {
-  padding: 7em 2em;
-  color: #555f61;
+  padding: 3em 1em;
+  font-size: 300%;
+  font-weight: 700;
   text-align: center;
 }
-/* line 34, ../scss/landing.scss */
-#about a:hover {
-  color: #555f61;
-}
 
-/* line 39, ../scss/landing.scss */
-#greet {
-  font-size: 300%;
-  padding-bottom: 0.5em;
-}
-
-/* line 44, ../scss/landing.scss */
-#links {
+/* line 27, ../scss/style.scss */
+#home {
+  top: 0;
   padding-top: 1em;
+  margin-right: 1em;
+  margin-top: 0;
+  float: right;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
 }
 
-@media (max-width: 350px) {
-  /* line 50, ../scss/landing.scss */
-  h1, #greet {
-    font-size: 130%;
-  }
-
-  /* line 54, ../scss/landing.scss */
-  h2, p {
-    font-size: 80%;
-  }
-}
-@media (min-width: 350px) and (max-width: 500px) {
-  /* line 60, ../scss/landing.scss */
+@media (max-width: 400px) {
+  /* line 40, ../scss/style.scss */
   h1 {
-    font-size: 250%;
-  }
-
-  /* line 64, ../scss/landing.scss */
-  #greet {
-    font-size: 200%;
-  }
-
-  /* line 68, ../scss/landing.scss */
-  h2 {
-    font-size: 100%;
-  }
-
-  /* line 72, ../scss/landing.scss */
-  .descrip p, .button {
-    font-size: 80%;
-  }
-}
-@media (min-width: 500px) and (max-width: 690px) {
-  /* line 78, ../scss/landing.scss */
-  h1 {
-    font-size: 300%;
-  }
-
-  /* line 82, ../scss/landing.scss */
-  #greet {
-    font-size: 230%;
-  }
-
-  /* line 86, ../scss/landing.scss */
-  h2 {
-    font-size: 130%;
-  }
-}
-@media (min-width: 690px) and (max-width: 930px) {
-  /* line 92, ../scss/landing.scss */
-  h1 {
-    font-size: 400%;
-  }
-
-  /* line 96, ../scss/landing.scss */
-  #greet {
-    font-size: 250%;
-  }
-
-  /* line 100, ../scss/landing.scss */
-  h2 {
     font-size: 150%;
   }
 }
-/**** PORTFOLIO ***/
-/* line 106, ../scss/landing.scss */
-#port {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
-  padding: 2em 0em;
-  background: #555f61;
-  color: white;
-  font-size: 150%;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+@media (min-width: 400px) and (max-width: 550px) {
+  /* line 45, ../scss/style.scss */
+  h1 {
+    font-size: 200%;
+  }
+
+  /* line 49, ../scss/style.scss */
+  #home {
+    font-size: 17px;
+  }
 }
-/* line 15, /Users/anniemeng/Documents/website/scss/bourbon/addons/_clearfix.scss */
-#port:after {
-  content: "";
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+/* line 60, ../scss/style.scss */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 65, ../scss/style.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 69, ../scss/style.scss */
+body {
+  font-family: "Chivo", sans-serif;
+}
+
+/* line 73, ../scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 77, ../scss/style.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 81, ../scss/style.scss */
+p {
+  text-align: center;
+}
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+/* line 90, ../scss/style.scss */
+.cd-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* line 95, ../scss/style.scss */
+.cd-container::after {
+  /* clearfix */
+  content: '';
   display: table;
   clear: both;
 }
-/* line 115, ../scss/landing.scss */
-#port a:hover {
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+/* line 109, ../scss/style.scss */
+.cd-gallery-container {
+  margin: 2em auto;
+}
+@media only screen and (min-width: 1200px) {
+  /* line 109, ../scss/style.scss */
+  .cd-gallery-container {
+    margin: 4em auto;
+  }
+}
+
+/* line 117, ../scss/style.scss */
+.cd-filter {
+  position: relative;
+  height: 40px;
+  width: 150px;
+  margin: 0 auto;
+  cursor: pointer;
+  z-index: 10;
+}
+/* line 125, ../scss/style.scss */
+.cd-filter ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  border-radius: 0.25em;
+  border-color: #2abb9b;
+}
+/* line 134, ../scss/style.scss */
+.cd-filter li {
+  display: none;
+}
+/* line 137, ../scss/style.scss */
+.cd-filter li:first-child {
+  display: block;
+  /* this way the placehodler is alway visible */
+}
+/* line 141, ../scss/style.scss */
+.cd-filter li:last-child a {
+  border-radius: 0 0 .25em .25em;
+}
+/* line 145, ../scss/style.scss */
+.cd-filter li p {
+  text-align: center;
+}
+/* line 150, ../scss/style.scss */
+.cd-filter a {
+  display: block;
+  height: 40px;
+  width: 150px;
+  line-height: 40px;
+  padding-left: 14px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2abb9b;
+  border: 1px solid #2abb9b;
+}
+/* line 162, ../scss/style.scss */
+.cd-filter a.selected {
+  background: #2abb9b;
   color: white;
+  border: none;
 }
-
-@media (min-width: 1100px) {
-  /* line 122, ../scss/landing.scss */
-  #port {
-    padding: 2em 5em;
+/* line 167, ../scss/style.scss */
+.no-touch .cd-filter a.selected:hover {
+  background: #2fd0ac;
+  border: none;
+}
+/* line 176, ../scss/style.scss */
+.cd-filter.is-open::after {
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+  -moz-transform: translateY(-50%) rotate(-180deg);
+  -ms-transform: translateY(-50%) rotate(-180deg);
+  -o-transform: translateY(-50%) rotate(-180deg);
+  transform: translateY(-50%) rotate(-180deg);
+  /* small arrow rotation */
+}
+/* line 180, ../scss/style.scss */
+.cd-filter.is-open ul li {
+  display: block;
+}
+/* line 184, ../scss/style.scss */
+.cd-filter.is-open .placeholder a {
+  opacity: .4;
+  /* reduces the opacity of the placeholder on mobile when the menu is open */
+  border: 1px solid #2abb9b;
+}
+@media only screen and (min-width: 768px) {
+  /* line 117, ../scss/style.scss */
+  .cd-filter {
+    height: auto;
+    width: auto;
+  }
+  /* line 194, ../scss/style.scss */
+  .cd-filter ul {
+    background: transparent;
+    position: static;
+    text-align: center;
+  }
+  /* line 200, ../scss/style.scss */
+  .cd-filter li {
+    display: inline-block;
+    margin: 0 .4em;
+  }
+  /* line 204, ../scss/style.scss */
+  .cd-filter li:first-child {
+    display: inline-block;
+  }
+  /* line 208, ../scss/style.scss */
+  .cd-filter li.placeholder {
+    display: none !important;
+  }
+  /* line 210, ../scss/style.scss */
+  .cd-filter li.placeholder a {
+    display: none;
+  }
+  /* line 216, ../scss/style.scss */
+  .cd-filter a {
+    display: inline-block;
+    padding: 1em 2em;
+    height: auto;
+    width: auto;
+    line-height: 1;
+    border-radius: 50em !important;
+  }
+  /* line 224, ../scss/style.scss */
+  .no-touch .cd-filter a:hover {
+    box-shadow: inset 0 0 0 2px #2abb9b;
+    border: none;
+  }
+  /* line 229, ../scss/style.scss */
+  .cd-filter a.selected:hover {
+    box-shadow: none;
+    /* removes the hover effect from the selected item */
+    border: none;
+  }
+  /* line 237, ../scss/style.scss */
+  .cd-filter.is-open ul li {
+    display: inline-block;
   }
 }
-/* line 127, ../scss/landing.scss */
-.descrip {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  text-align: center;
-  margin: 0;
-  padding: 2em 0;
-}
-/* line 38, /Users/anniemeng/Documents/website/scss/neat/grid/_span-columns.scss */
-.descrip:last-child {
-  margin-right: 0;
-}
 
-/* line 134, ../scss/landing.scss */
-.other {
-  float: left;
+/* -------------------------------- 
+
+xgallery 
+
+-------------------------------- */
+/* line 250, ../scss/style.scss */
+.cd-gallery {
+  margin-top: 2em;
+  position: relative;
+  z-index: 5;
+}
+/* line 255, ../scss/style.scss */
+.cd-gallery > li {
+  position: relative;
+  margin-bottom: 1em;
+}
+/* line 260, ../scss/style.scss */
+.cd-gallery .cd-item-wrapper {
+  /* this is the item that rotates */
+  position: relative;
+}
+/* line 263, ../scss/style.scss */
+.touch .cd-gallery .cd-item-wrapper {
+  /* fix a bug on IOS8 - rotating elements dissapear*/
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+}
+/* line 270, ../scss/style.scss */
+.cd-gallery .cd-item-wrapper.is-switched .is-visible {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-animation: cd-rotate 0.5s;
+  -moz-animation: cd-rotate 0.5s;
+  animation: cd-rotate 0.5s;
+}
+/* line 275, ../scss/style.scss */
+.cd-gallery .cd-item-wrapper.is-switched .is-hidden {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-animation: cd-rotate-inverse 0.5s;
+  -moz-animation: cd-rotate-inverse 0.5s;
+  animation: cd-rotate-inverse 0.5s;
+  opacity: 0;
+}
+/* line 281, ../scss/style.scss */
+.cd-gallery .cd-item-wrapper.is-switched .is-selected {
+  opacity: 1;
+}
+/* line 287, ../scss/style.scss */
+.cd-gallery .cd-item-wrapper > li {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 0.25em;
+}
+/* line 291, ../scss/style.scss */
+.cd-gallery .cd-item-wrapper > li img {
   display: block;
-  margin-right: 2.35765%;
   width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 2em 0;
+  border-radius: 0.25em;
 }
-/* line 38, /Users/anniemeng/Documents/website/scss/neat/grid/_span-columns.scss */
-.other:last-child {
-  margin-right: 0;
+/* line 298, ../scss/style.scss */
+.cd-gallery li.is-visible {
+  /* the front item, visible by default */
+  position: relative;
+  z-index: 5;
 }
-
-@media (max-width: 800px) {
-  /* line 143, ../scss/landing.scss */
-  .descrip {
+/* line 303, ../scss/style.scss */
+.cd-gallery li.is-hidden {
+  /* the hidden items, right behind the front one */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/* line 313, ../scss/style.scss */
+.cd-gallery li.is-selected {
+  /* the next item that will be visible */
+  z-index: 3 !important;
+}
+@media only screen and (min-width: 480px) {
+  /* line 318, ../scss/style.scss */
+  .cd-gallery > li {
+    width: 48%;
     float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
+    margin-right: 4%;
+    margin-bottom: 1.2em;
   }
-  /* line 38, /Users/anniemeng/Documents/website/scss/neat/grid/_span-columns.scss */
-  .descrip:last-child {
+  /* line 323, ../scss/style.scss */
+  .cd-gallery > li:nth-of-type(2n) {
     margin-right: 0;
   }
 }
-/* line 148, ../scss/landing.scss */
-hr {
-  width: 3em;
+@media only screen and (min-width: 768px) {
+  /* line 330, ../scss/style.scss */
+  .cd-gallery > li {
+    width: 22%;
+    float: left;
+  }
+  /* line 333, ../scss/style.scss */
+  .cd-gallery > li:nth-of-type(2n) {
+    margin-right: 4%;
+  }
+  /* line 337, ../scss/style.scss */
+  .cd-gallery > li:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 250, ../scss/style.scss */
+  .cd-gallery {
+    margin-top: 4em;
+  }
 }
 
-/* line 152, ../scss/landing.scss */
-p {
-  margin-bottom: 0;
+/* -------------------------------- 
+
+xkeyframes 
+
+-------------------------------- */
+@-webkit-keyframes cd-rotate {
+  /* line 356, ../scss/style.scss */
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0);
+  }
+
+  /* line 360, ../scss/style.scss */
+  70% {
+    -webkit-transform: perspective(800px) rotateY(200deg);
+    /* this creates the bounce effect */
+  }
+
+  /* line 364, ../scss/style.scss */
+  100% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+  }
+}
+
+@-moz-keyframes cd-rotate {
+  /* line 356, ../scss/style.scss */
+  0% {
+    -moz-transform: perspective(800px) rotateY(0);
+  }
+
+  /* line 360, ../scss/style.scss */
+  70% {
+    -moz-transform: perspective(800px) rotateY(200deg);
+    /* this creates the bounce effect */
+  }
+
+  /* line 364, ../scss/style.scss */
+  100% {
+    -moz-transform: perspective(800px) rotateY(180deg);
+  }
+}
+
+@keyframes cd-rotate {
+  /* line 356, ../scss/style.scss */
+  0% {
+    -webkit-transform: perspective(800px) rotateY(0);
+    -moz-transform: perspective(800px) rotateY(0);
+    -ms-transform: perspective(800px) rotateY(0);
+    -o-transform: perspective(800px) rotateY(0);
+    transform: perspective(800px) rotateY(0);
+  }
+
+  /* line 360, ../scss/style.scss */
+  70% {
+    -webkit-transform: perspective(800px) rotateY(200deg);
+    -moz-transform: perspective(800px) rotateY(200deg);
+    -ms-transform: perspective(800px) rotateY(200deg);
+    -o-transform: perspective(800px) rotateY(200deg);
+    transform: perspective(800px) rotateY(200deg);
+    /* this creates the bounce effect */
+  }
+
+  /* line 364, ../scss/style.scss */
+  100% {
+    -webkit-transform: perspective(800px) rotateY(180deg);
+    -moz-transform: perspective(800px) rotateY(180deg);
+    -ms-transform: perspective(800px) rotateY(180deg);
+    -o-transform: perspective(800px) rotateY(180deg);
+    transform: perspective(800px) rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes cd-rotate-inverse {
+  /* line 370, ../scss/style.scss */
+  0% {
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+  }
+
+  /* line 374, ../scss/style.scss */
+  70% {
+    -webkit-transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+
+  /* line 378, ../scss/style.scss */
+  100% {
+    -webkit-transform: perspective(800px) rotateY(0);
+  }
+}
+
+@-moz-keyframes cd-rotate-inverse {
+  /* line 370, ../scss/style.scss */
+  0% {
+    -moz-transform: perspective(800px) rotateY(-180deg);
+  }
+
+  /* line 374, ../scss/style.scss */
+  70% {
+    -moz-transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+
+  /* line 378, ../scss/style.scss */
+  100% {
+    -moz-transform: perspective(800px) rotateY(0);
+  }
+}
+
+@keyframes cd-rotate-inverse {
+  /* line 370, ../scss/style.scss */
+  0% {
+    -webkit-transform: perspective(800px) rotateY(-180deg);
+    -moz-transform: perspective(800px) rotateY(-180deg);
+    -ms-transform: perspective(800px) rotateY(-180deg);
+    -o-transform: perspective(800px) rotateY(-180deg);
+    transform: perspective(800px) rotateY(-180deg);
+  }
+
+  /* line 374, ../scss/style.scss */
+  70% {
+    -webkit-transform: perspective(800px) rotateY(20deg);
+    -moz-transform: perspective(800px) rotateY(20deg);
+    -ms-transform: perspective(800px) rotateY(20deg);
+    -o-transform: perspective(800px) rotateY(20deg);
+    transform: perspective(800px) rotateY(20deg);
+    /* this creates the bounce effect */
+  }
+
+  /* line 378, ../scss/style.scss */
+  100% {
+    -webkit-transform: perspective(800px) rotateY(0);
+    -moz-transform: perspective(800px) rotateY(0);
+    -ms-transform: perspective(800px) rotateY(0);
+    -o-transform: perspective(800px) rotateY(0);
+    transform: perspective(800px) rotateY(0);
+  }
 }

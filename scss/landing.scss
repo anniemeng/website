@@ -6,7 +6,7 @@
 
 /*******TOP HEADING********/
 body {
-    font-family:$header-font;
+    font-family: $header-font-family;
 }
 
 a {
@@ -31,7 +31,6 @@ h1 {
     padding: 7em 2em;
     color:$asher;
     text-align:center;
-    
     a:hover {
         color:$asher;
     }
@@ -111,6 +110,7 @@ h1 {
     background:$asher;
     color:$general;
     font-size:150%;
+    font-family: $header-font-family;
     
     a:hover {
         color:$general;
@@ -124,9 +124,15 @@ h1 {
   }
 }
 
-
 .descrip {
     @include span-columns(6);
+    text-align: center;
+    margin:0;
+    padding:2em 0;
+}
+
+.other {
+    @include span-columns(12);
     text-align: center;
     margin:0;
     padding:2em 0;

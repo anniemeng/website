@@ -1,42 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
   <!--CSS-->
-  <link rel="stylesheet" href="css/trad-portfolio.css"/>
+  	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr.js"></script>
+  	
 
 <header>
-    <title>Traditional Art Portfolio</title>
-    <a id="home" href="index.html">Home</a>
-    <h1>Traditional Art Portfolio</h1>
+    <title>Art Portfolio</title>
+    <a id="home" href="index.html#port">Home</a>
+    <h1>Art Portfolio</h1>
 </header>
 
 <body>
-    <div id="container">
-      <div class="item"><img src="img/trad/part2.jpg"/>           </div>
-      <div class="item"><img src="img/trad/self.jpg"></div>
-      <div class="item"><img src="img/trad/4turn.jpg"></div>
-      <div class="item"><img src="img/trad/pennpark.jpg">         </div>
-      <div class="item"><img src="img/trad/13th Lounge.jpg">       </div>
-      <div class="item"><img src="img/trad/paper.jpg"></div>
-      <div class="item"><img src="img/trad/flowers.jpg">           </div>
-      <div class="item"><img src="img/trad/owl.jpg"></div>
-      <div class="item"><img src="img/trad/flower pot.jpg">       </div>
-      <div class="item"><img src="img/trad/still life 2.jpg">
-      </div>
-      <div class="item"><img src="img/trad/girl face.jpg">         </div>
-      <div class="item"><img src="img/trad/sculpture.jpg">         </div>
-      <div class="item"><img src="img/trad/still life.jpg">       </div>
-    </div>
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
-    </script>
-    <script src="/js/imagesloaded.pkgd.min.js"></script>
-    <script src="/js/packery.pkgd.min.js">
-    </script>
-    <script>
-        var $container = $('#container');                           $container.imagesLoaded(function() {
-          $container.packery({
-              itemSelector: '.item',
-              gutter: 10});
-        });
-    </script>
+    <div class="cd-gallery-container">
+    <nav class="cd-filter">
+        <ul>
+            <li class="placeholder"> 
+            <a data-type="trad" href="#0">Traditional</a>             <!-- selected option on mobile -->
+            </li> 
+
+            <li>
+            <a class="selected" data-type="trad" href="#0">Traditional</a>
+            </li>
+
+            <li>
+            <a data-type="dig" href="#0">Digital</a>
+            </li>
+
+            <li>
+            <a data-type="3d" href="#0">3D Modelling</a>
+            </li>
+        </ul>
+    </nav>
+
+    <ul class="cd-gallery cd-container">
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                <img src="img/trad/part2.jpg" alt="thumbnail">
+                </li>
+
+                <li data-type="dig" class="is-hidden">
+                    <img src="img/dig/semiotic.jpg" alt="thumbnail">
+                </li>
+                
+                <li data-type="3d" class="is-hidden">
+                    <p>Coming soon!</p>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/self.jpg" alt="thumbnail">
+                </li>
+
+                <li data-type="dig" class="is-hidden">
+                    <img src="img/dig/sound1.jpg" alt="thumbnail">
+                </li>
+
+                <li data-type="3d" class="is-hidden">
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/4turn.jpg" alt="thumbnail">
+                </li>
+
+                <li data-type="dig" class="is-hidden">
+                    <img src="img/dig/sound2.jpg" alt="thumbnail">
+                </li>
+
+                <li data-type="3d" class="is-hidden">
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/pennpark.jpg" alt="thumbnail">
+                </li>
+
+                <li data-type="dig" class="is-hidden">
+                    <img src="img/dig/text.jpg" alt="thumbnail">
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/13th Lounge.jpg" alt="thumbnail">
+                </li>
+
+                <li data-type="dig" class="is-hidden">
+                    <img src="img/dig/static.jpg" alt="thumbnail">
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/paper.jpg" alt="thumbnail">
+                </li>
+
+                <li data-type="dig" class="is-hidden">
+                    <img src="img/dig/anniefinalanimation.gif" alt="thumbnail">
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/flowers.jpg" alt="thumbnail">
+                </li>
+
+                <li data-type="dig" class="is-hidden">
+                    <img src="img/dig/Annie_1.jpg" alt="thumbnail">
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/owl.jpg" alt="thumbnail">
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/flower%20pot.jpg" alt="thumbnail">
+                </li>
+            </ul>
+        </li>        
+
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/still life 2.jpg" alt="thumbnail">
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/girl%20face.jpg" alt="thumbnail">
+                </li>
+            </ul>
+        </li>        
+        
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/sculpture.jpg" alt="thumbnail">
+                </li>
+            </ul>
+        </li>        
+                
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/still%20life.jpg" alt="thumbnail">
+                </li>
+            </ul>
+        </li>  
+
+        <li>
+            <ul class="cd-item-wrapper">
+                <li data-type="trad" class="is-visible">
+                    <img src="img/trad/trees.jpg" alt="thumbnail">
+                </li>
+            </ul>
+        </li>   
+        
+    </ul> <!-- cd-gallery -->
+</div> <!-- cd-gallery-container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Gem jQuery -->
 </body>

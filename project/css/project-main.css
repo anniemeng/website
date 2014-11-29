@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Chivo);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,100);
 /*** IMPORTS ***/
 /* line 55, ../../scss/general/_normalize.scss */
 article,
@@ -679,18 +680,6 @@ h2 {
   }
 }
 /* line 44, ../scss/project-main.scss */
-.card .card-image {
-  overflow: hidden;
-  max-height: 150px;
-}
-/* line 48, ../scss/project-main.scss */
-.card .card-image img {
-  width: 100%;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-/* line 57, ../scss/project-main.scss */
 .card .card-header {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -703,31 +692,35 @@ h2 {
   padding-left: 1.5em;
   font-size: 20px;
 }
-/* line 68, ../scss/project-main.scss */
+/* line 55, ../scss/project-main.scss */
 .card .card-copy {
   padding: 2em;
   font-size: .9em;
   line-height: 1.5em;
 }
-/* line 73, ../scss/project-main.scss */
+/* line 60, ../scss/project-main.scss */
 .card .card-copy a {
   color: white;
   text-decoration: underline;
 }
-/* line 82, ../scss/project-main.scss */
+/* line 64, ../scss/project-main.scss */
+.card .card-copy a:hover {
+  color: #5ca794;
+}
+/* line 73, ../scss/project-main.scss */
 .card:hover .card-image img {
   background: #e2daac;
 }
-/* line 86, ../scss/project-main.scss */
+/* line 77, ../scss/project-main.scss */
 .card:hover .card-header {
   background-color: white;
   color: #5ca794;
 }
-/* line 92, ../scss/project-main.scss */
+/* line 83, ../scss/project-main.scss */
 .card:active {
   background-color: #555f61;
 }
-/* line 95, ../scss/project-main.scss */
+/* line 86, ../scss/project-main.scss */
 .card:active .card-header {
   background-color: #555f61;
 }
