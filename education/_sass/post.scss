@@ -1,0 +1,25 @@
+h2 {
+    clear:both;
+    text-decoration: underline;
+}
+
+a {
+    color:black;
+}
+
+img[alt="shoc1"], 
+img[alt="problem"],
+img[alt="prev"],
+img[alt="after"] {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:1em;
+}
+
+@media (min-width:600px) {
+    img[alt="shoc1"] {
+        float:left;
+        padding-bottom:2em;
+    }
+}
