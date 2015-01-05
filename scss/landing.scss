@@ -16,7 +16,6 @@ a {
 
 header {
   text-align:center;
-  background:url("../img/landing-background.gif") no-repeat 50% 50% fixed;
   //background-color:$carib;
   background-size:cover;
   color:#fff;
@@ -24,9 +23,15 @@ header {
   padding:5%;
 }
 
-h1 {
-  font-size:500%;
+.h-main {
+  display:block;
+  font-size:800%;
   font-family:$header-font;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent,                         transparent), url("../img/download2.png")                     repeat 25% 25%;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
 }
 
 /***** ABOUT *****/
@@ -50,7 +55,7 @@ h1 {
 
 // ABOUT MEDIA QUERIES
 @media (max-width:350px) {
-  h1, #greet {
+  .h-main , #greet {
     font-size:130%;
   }
 
@@ -60,7 +65,7 @@ h1 {
 }
 
 @media (min-width:350px) and (max-width:500px) {
-  h1 {
+  .h-main  {
     font-size:250%;
   }
 
@@ -78,8 +83,8 @@ h1 {
 }
 
 @media (min-width:500px) and (max-width:690px) {
-  h1 {
-    font-size:300%;
+  .h-main  {
+    font-size:400%;
   }
   
   #greet {
@@ -92,8 +97,8 @@ h1 {
 }
 
 @media (min-width:690px) and (max-width:930px) {
-  h1 {
-    font-size:400%;
+  .h-main  {
+    font-size:600%;
   }
   
   #greet {

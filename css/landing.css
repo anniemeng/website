@@ -597,108 +597,113 @@ a {
 /* line 17, ../scss/landing.scss */
 header {
   text-align: center;
-  background: url("../img/landing-background.gif") no-repeat 50% 50% fixed;
   background-size: cover;
   color: #fff;
   margin: 0 auto;
   padding: 5%;
 }
 
-/* line 27, ../scss/landing.scss */
-h1 {
-  font-size: 500%;
+/* line 26, ../scss/landing.scss */
+.h-main {
+  display: block;
+  font-size: 800%;
   font-family: "Chivo", sans-serif;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../img/download2.png") repeat 25% 25%;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
 }
 
 /***** ABOUT *****/
-/* line 33, ../scss/landing.scss */
+/* line 38, ../scss/landing.scss */
 #about {
   padding: 7em 2em;
   color: #555f61;
   text-align: center;
 }
-/* line 37, ../scss/landing.scss */
+/* line 42, ../scss/landing.scss */
 #about a:hover {
   color: #555f61;
 }
 
-/* line 42, ../scss/landing.scss */
+/* line 47, ../scss/landing.scss */
 #greet {
   font-size: 300%;
   padding-bottom: 0.5em;
 }
 
-/* line 47, ../scss/landing.scss */
+/* line 52, ../scss/landing.scss */
 #links {
   padding-top: 1em;
 }
 
 @media (max-width: 350px) {
-  /* line 53, ../scss/landing.scss */
-  h1, #greet {
+  /* line 58, ../scss/landing.scss */
+  .h-main, #greet {
     font-size: 130%;
   }
 
-  /* line 57, ../scss/landing.scss */
+  /* line 62, ../scss/landing.scss */
   h2, p {
     font-size: 80%;
   }
 }
 @media (min-width: 350px) and (max-width: 500px) {
-  /* line 63, ../scss/landing.scss */
-  h1 {
+  /* line 68, ../scss/landing.scss */
+  .h-main {
     font-size: 250%;
   }
 
-  /* line 67, ../scss/landing.scss */
+  /* line 72, ../scss/landing.scss */
   #greet {
     font-size: 200%;
   }
 
-  /* line 71, ../scss/landing.scss */
+  /* line 76, ../scss/landing.scss */
   h2 {
     font-size: 100%;
   }
 
-  /* line 75, ../scss/landing.scss */
+  /* line 80, ../scss/landing.scss */
   .descrip p, .button {
     font-size: 80%;
   }
 }
 @media (min-width: 500px) and (max-width: 690px) {
-  /* line 81, ../scss/landing.scss */
-  h1 {
-    font-size: 300%;
+  /* line 86, ../scss/landing.scss */
+  .h-main {
+    font-size: 400%;
   }
 
-  /* line 85, ../scss/landing.scss */
+  /* line 90, ../scss/landing.scss */
   #greet {
     font-size: 230%;
   }
 
-  /* line 89, ../scss/landing.scss */
+  /* line 94, ../scss/landing.scss */
   h2 {
     font-size: 130%;
   }
 }
 @media (min-width: 690px) and (max-width: 930px) {
-  /* line 95, ../scss/landing.scss */
-  h1 {
-    font-size: 400%;
+  /* line 100, ../scss/landing.scss */
+  .h-main {
+    font-size: 600%;
   }
 
-  /* line 99, ../scss/landing.scss */
+  /* line 104, ../scss/landing.scss */
   #greet {
     font-size: 250%;
   }
 
-  /* line 103, ../scss/landing.scss */
+  /* line 108, ../scss/landing.scss */
   h2 {
     font-size: 150%;
   }
 }
 /**** PORTFOLIO ***/
-/* line 109, ../scss/landing.scss */
+/* line 114, ../scss/landing.scss */
 #port {
   max-width: 100%;
   margin-left: auto;
@@ -716,18 +721,18 @@ h1 {
   display: table;
   clear: both;
 }
-/* line 118, ../scss/landing.scss */
+/* line 123, ../scss/landing.scss */
 #port a:hover {
   color: white;
 }
 
 @media (min-width: 1100px) {
-  /* line 125, ../scss/landing.scss */
+  /* line 130, ../scss/landing.scss */
   #port {
     padding: 2em 5em;
   }
 }
-/* line 130, ../scss/landing.scss */
+/* line 135, ../scss/landing.scss */
 .descrip {
   float: left;
   display: block;
@@ -742,7 +747,7 @@ h1 {
   margin-right: 0;
 }
 
-/* line 137, ../scss/landing.scss */
+/* line 142, ../scss/landing.scss */
 .other {
   float: left;
   display: block;
@@ -758,7 +763,7 @@ h1 {
 }
 
 @media (max-width: 800px) {
-  /* line 146, ../scss/landing.scss */
+  /* line 151, ../scss/landing.scss */
   .descrip {
     float: left;
     display: block;
@@ -770,17 +775,17 @@ h1 {
     margin-right: 0;
   }
 }
-/* line 151, ../scss/landing.scss */
+/* line 156, ../scss/landing.scss */
 hr {
   width: 3em;
 }
 
-/* line 155, ../scss/landing.scss */
+/* line 160, ../scss/landing.scss */
 p {
   margin-bottom: 0;
 }
 
-/* line 160, ../scss/landing.scss */
+/* line 165, ../scss/landing.scss */
 h2.temp {
   text-align: center;
 }
