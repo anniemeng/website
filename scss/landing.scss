@@ -10,15 +10,14 @@ body {
 }
 
 a {
-    color:$carib;  
+    color:$light-b;  
     text-decoration: none;
 }
 
 header {
   text-align:center;
-  //background-color:$carib;
   background-size:cover;
-  color:#fff;
+  color:$asher;
   margin: 0 auto;
   padding:5%;
 }
@@ -27,7 +26,7 @@ header {
   display:block;
   font-size:800%;
   font-family:$header-font;
-  color: red;
+  color: $asher;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(transparent,                         transparent), url("../img/download2.png")                     repeat 25% 25%;
   background: -o-linear-gradient(transparent, transparent);
@@ -40,7 +39,7 @@ header {
     color:$asher;
     text-align:center;
     a:hover {
-        color:$asher;
+        color:$dark-b;
     }
 }
 
@@ -58,6 +57,11 @@ header {
   .h-main , #greet {
     font-size:130%;
   }
+    
+  #first {
+    display:block;
+  }
+  
 
   h2, p {
     font-size:80%;
@@ -66,8 +70,14 @@ header {
 
 @media (min-width:350px) and (max-width:500px) {
   .h-main  {
-    font-size:250%;
+    font-size:400%;
   }
+  
+  #first {
+    display:block;
+      margin-bottom:0;
+  }
+  
 
   #greet {
     font-size:200%;
@@ -84,7 +94,12 @@ header {
 
 @media (min-width:500px) and (max-width:690px) {
   .h-main  {
-    font-size:400%;
+    font-size:600%;
+  }
+    
+  #first {
+    display:block;
+    margin-bottom:0;
   }
   
   #greet {
