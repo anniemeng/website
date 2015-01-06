@@ -6,7 +6,8 @@
 
 /*******TOP HEADING********/
 body {
-    font-family: $header-font-family;
+    font-family: $header-font;
+    color: $asher;
 }
 
 a {
@@ -25,7 +26,6 @@ header {
   display:block;
   font-size:800%;
   font-family:$header-font;
-  color: $asher;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(transparent,                         transparent), url("../img/download2.png")                     repeat 25% 25%;
   background: -o-linear-gradient(transparent, transparent);
@@ -41,10 +41,9 @@ h3 {
     position:fixed;
     padding: 2%;
     background: $back;
-    //background:#fff;
     border-bottom: 1px solid $head-g;
     color: $gray;
-    font-family:$header-font;
+    z-index: 100;
 }
 
 .menuItem {
@@ -74,8 +73,24 @@ h3 {
 }
 
 /***** ABOUT *****/
-#about {
-    padding: 4em 2em;
+#arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 100px solid $bright-b;
+}
+
+#arrow-right2 {
+    @extend #arrow-right;
+    margin-top:-50px;
+    margin-left: 25px;
+    border-left-color: $dark-b;
+}
+
+#about-descrip {
+    padding: 5%;
+    padding-top: 2%;
     background:#fff;
     color: $gray;
     text-align:left;
@@ -87,10 +102,16 @@ h3 {
 h2 {
     font-size: 150%;
 }
+
 #greet {
     color: $asher;
     font-size:300%;
-    padding-bottom:0.5em;
+    padding-bottom: 0.5em;
+}
+
+#subtitle {
+    display: block;
+    font-size:70%;
 }
 
 #links {
@@ -170,8 +191,86 @@ h2 {
   }
 }
 
+/**** PROJECTS ****/
+#arrow-left {
+    position:absolute;
+    right:0;
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent; 
+	border-right:100px solid $bright-b; 
+}
+
+#arrow-left2 {
+    @extend #arrow-left;
+    margin-top:-50px;
+    margin-right: 25px;
+    border-right-color: $dark-b;
+}
+
+#title {
+    font-size:300%;
+    text-align:center;
+    color: $asher;
+}
+
+#p-descrip {
+    clear:both;
+    padding: 10% 0;
+}
+
+hr {
+    width:3em;
+}
+
+/*** PROJECT BLOCKS ***/
+.projects {
+    display: block;
+    margin: 5% auto;
+}
+
+.project {
+    position:relative;
+    padding: 5%;
+    width: 100%;
+    background: url("../img/sound1.jpg") no-repeat 50% 50%;
+    background-size:cover;
+    margin: 5% auto;
+    z-index:5;
+}
+
+.proj-title {
+    font-size:200%;
+    padding-bottom: 0.5em;
+}
+
+.overlay {  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.5);
+    z-index:100;
+    //width: 50%;
+    //margin-right: 5%;
+    //float:left;
+}
+
+.time {
+    color: $silver;
+}
+
+/*.proj-img {
+    width: 40%;
+    float:left;
+    
+    img {
+        height: 300px;
+    }
+}*/
+
 /**** PORTFOLIO ***/
-#port {
+/*#port {
     @include outer-container;
     margin:0;
     padding:2em 0em;
@@ -224,4 +323,4 @@ p {
 // temp
 h2.temp{
     text-align:center;
-}
+}*/

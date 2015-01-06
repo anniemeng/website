@@ -585,16 +585,17 @@ input[type="submit"] {
 /*******TOP HEADING********/
 /* line 8, ../scss/landing.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Chivo", sans-serif;
+  color: #555f61;
 }
 
-/* line 12, ../scss/landing.scss */
+/* line 13, ../scss/landing.scss */
 a {
   color: #4dd3ff;
   text-decoration: none;
 }
 
-/* line 17, ../scss/landing.scss */
+/* line 18, ../scss/landing.scss */
 header {
   text-align: center;
   background-size: cover;
@@ -602,12 +603,11 @@ header {
   margin: 0 auto;
 }
 
-/* line 24, ../scss/landing.scss */
+/* line 25, ../scss/landing.scss */
 .h-main {
   display: block;
   font-size: 800%;
   font-family: "Chivo", sans-serif;
-  color: #555f61;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(transparent, transparent), url("../img/download2.png") repeat 25% 25%;
   background: -o-linear-gradient(transparent, transparent);
@@ -627,235 +627,255 @@ h3 {
   background: #fafafa;
   border-bottom: 1px solid #e5e8ec;
   color: #8c979a;
-  font-family: "Chivo", sans-serif;
+  z-index: 100;
 }
 
-/* line 50, ../scss/landing.scss */
+/* line 49, ../scss/landing.scss */
 .menuItem {
   display: inline-block;
   padding: 0 1em;
 }
-/* line 54, ../scss/landing.scss */
+/* line 53, ../scss/landing.scss */
 .menuItem a {
   color: #8c979a;
 }
 
-/* line 59, ../scss/landing.scss */
+/* line 58, ../scss/landing.scss */
 #home {
   float: left;
 }
 
-/* line 63, ../scss/landing.scss */
+/* line 62, ../scss/landing.scss */
 .right {
   float: right;
 }
 
-/* line 67, ../scss/landing.scss */
+/* line 66, ../scss/landing.scss */
 .stuckMenu {
   left: 0px;
   width: 100%;
 }
 
-/* line 72, ../scss/landing.scss */
+/* line 71, ../scss/landing.scss */
 .active a {
   text-decoration: line-through;
 }
 
 /***** ABOUT *****/
-/* line 77, ../scss/landing.scss */
-#about {
-  padding: 4em 2em;
+/* line 76, ../scss/landing.scss */
+#arrow-right, #arrow-right2 {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 100px solid #6cffff;
+}
+
+/* line 84, ../scss/landing.scss */
+#arrow-right2 {
+  margin-top: -50px;
+  margin-left: 25px;
+  border-left-color: #2876ff;
+}
+
+/* line 91, ../scss/landing.scss */
+#about-descrip {
+  padding: 5%;
+  padding-top: 2%;
   background: #fff;
   color: #8c979a;
   text-align: left;
 }
-/* line 82, ../scss/landing.scss */
-#about a:hover {
+/* line 97, ../scss/landing.scss */
+#about-descrip a:hover {
   color: #555f61;
 }
 
-/* line 87, ../scss/landing.scss */
+/* line 102, ../scss/landing.scss */
 h2 {
   font-size: 150%;
 }
 
-/* line 90, ../scss/landing.scss */
+/* line 106, ../scss/landing.scss */
 #greet {
   color: #555f61;
   font-size: 300%;
   padding-bottom: 0.5em;
 }
 
-/* line 96, ../scss/landing.scss */
+/* line 112, ../scss/landing.scss */
+#subtitle {
+  display: block;
+  font-size: 70%;
+}
+
+/* line 117, ../scss/landing.scss */
 #links {
   padding-top: 1em;
 }
 
 @media (max-width: 350px) {
-  /* line 102, ../scss/landing.scss */
+  /* line 123, ../scss/landing.scss */
   .h-main, #greet {
     font-size: 130%;
   }
 
-  /* line 106, ../scss/landing.scss */
+  /* line 127, ../scss/landing.scss */
   #first {
     display: block;
   }
 
-  /* line 111, ../scss/landing.scss */
+  /* line 132, ../scss/landing.scss */
   h2, p {
     font-size: 80%;
   }
 }
 @media (min-width: 350px) and (max-width: 500px) {
-  /* line 117, ../scss/landing.scss */
+  /* line 138, ../scss/landing.scss */
   .h-main {
     font-size: 400%;
   }
 
-  /* line 121, ../scss/landing.scss */
+  /* line 142, ../scss/landing.scss */
   #first {
     display: block;
     margin-bottom: 0;
   }
 
-  /* line 127, ../scss/landing.scss */
+  /* line 148, ../scss/landing.scss */
   #greet {
     font-size: 200%;
   }
 
-  /* line 131, ../scss/landing.scss */
+  /* line 152, ../scss/landing.scss */
   h2 {
     font-size: 100%;
   }
 
-  /* line 135, ../scss/landing.scss */
+  /* line 156, ../scss/landing.scss */
   .descrip p, .button {
     font-size: 80%;
   }
 }
 @media (min-width: 500px) and (max-width: 690px) {
-  /* line 141, ../scss/landing.scss */
+  /* line 162, ../scss/landing.scss */
   .h-main {
     font-size: 600%;
   }
 
-  /* line 145, ../scss/landing.scss */
+  /* line 166, ../scss/landing.scss */
   #first {
     display: block;
     margin-bottom: 0;
   }
 
-  /* line 150, ../scss/landing.scss */
+  /* line 171, ../scss/landing.scss */
   #greet {
     font-size: 230%;
   }
 
-  /* line 154, ../scss/landing.scss */
+  /* line 175, ../scss/landing.scss */
   h2 {
     font-size: 130%;
   }
 }
 @media (min-width: 690px) and (max-width: 930px) {
-  /* line 160, ../scss/landing.scss */
+  /* line 181, ../scss/landing.scss */
   .h-main {
     font-size: 600%;
   }
 
-  /* line 164, ../scss/landing.scss */
+  /* line 185, ../scss/landing.scss */
   #greet {
     font-size: 250%;
   }
 
-  /* line 168, ../scss/landing.scss */
+  /* line 189, ../scss/landing.scss */
   h2 {
     font-size: 150%;
   }
 }
-/**** PORTFOLIO ***/
-/* line 174, ../scss/landing.scss */
-#port {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
-  padding: 2em 0em;
-  background: #555f61;
-  color: white;
-  font-size: 150%;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-}
-/* line 15, ../scss/bourbon/addons/_clearfix.scss */
-#port:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 183, ../scss/landing.scss */
-#port a:hover {
-  color: white;
-}
-
-@media (min-width: 1100px) {
-  /* line 190, ../scss/landing.scss */
-  #port {
-    padding: 2em 5em;
-  }
-}
+/**** PROJECTS ****/
 /* line 195, ../scss/landing.scss */
-.descrip {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  text-align: center;
-  margin: 0;
-  padding: 2em 0;
-}
-/* line 38, ../scss/neat/grid/_span-columns.scss */
-.descrip:last-child {
-  margin-right: 0;
+#arrow-left, #arrow-left2 {
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right: 100px solid #6cffff;
 }
 
-/* line 202, ../scss/landing.scss */
-.other {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 2em 0;
-}
-/* line 38, ../scss/neat/grid/_span-columns.scss */
-.other:last-child {
-  margin-right: 0;
+/* line 205, ../scss/landing.scss */
+#arrow-left2 {
+  margin-top: -50px;
+  margin-right: 25px;
+  border-right-color: #2876ff;
 }
 
-@media (max-width: 800px) {
-  /* line 211, ../scss/landing.scss */
-  .descrip {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-  }
-  /* line 38, ../scss/neat/grid/_span-columns.scss */
-  .descrip:last-child {
-    margin-right: 0;
-  }
+/* line 212, ../scss/landing.scss */
+#title {
+  font-size: 300%;
+  text-align: center;
+  color: #555f61;
 }
-/* line 216, ../scss/landing.scss */
+
+/* line 218, ../scss/landing.scss */
+#p-descrip {
+  clear: both;
+  padding: 10% 0;
+}
+
+/* line 223, ../scss/landing.scss */
 hr {
   width: 3em;
 }
 
-/* line 220, ../scss/landing.scss */
-p {
-  margin-bottom: 0;
+/*** PROJECT BLOCKS ***/
+/* line 228, ../scss/landing.scss */
+.projects {
+  display: block;
+  margin: 5% auto;
 }
 
-/* line 225, ../scss/landing.scss */
-h2.temp {
-  text-align: center;
+/* line 233, ../scss/landing.scss */
+.project {
+  position: relative;
+  padding: 5%;
+  width: 100%;
+  background: url("../img/sound1.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  margin: 5% auto;
+  z-index: 5;
 }
+
+/* line 243, ../scss/landing.scss */
+.proj-title {
+  font-size: 200%;
+  padding-bottom: 0.5em;
+}
+
+/* line 248, ../scss/landing.scss */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* line 259, ../scss/landing.scss */
+.time {
+  color: #a7b0b2;
+}
+
+/*.proj-img {
+    width: 40%;
+    float:left;
+    
+    img {
+        height: 300px;
+    }
+}*/
+/**** PORTFOLIO ***/
