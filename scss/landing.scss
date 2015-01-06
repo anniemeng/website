@@ -17,9 +17,8 @@ a {
 header {
   text-align:center;
   background-size:cover;
-  color:$asher;
+  color:$silver;
   margin: 0 auto;
-  padding:5%;
 }
 
 .h-main {
@@ -33,17 +32,63 @@ header {
   -webkit-background-clip: text;
 }
 
-/***** ABOUT *****/
-#about {
-    padding: 7em 2em;
-    color:$asher;
-    text-align:center;
-    a:hover {
-        color:$dark-b;
+h3 {
+    color: $silver;
+}
+
+/***** NAV ******/
+.navbar {
+    position:fixed;
+    padding: 2%;
+    background: $back;
+    //background:#fff;
+    border-bottom: 1px solid $head-g;
+    color: $gray;
+    font-family:$header-font;
+}
+
+.menuItem {
+    display:inline-block;
+    padding: 0 1em;
+   
+    a {
+        color: $gray;
     }
 }
 
+#home {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.stuckMenu{
+    left:0px;
+    width:100%;
+}
+
+.active a {
+    text-decoration:line-through;
+}
+
+/***** ABOUT *****/
+#about {
+    padding: 4em 2em;
+    background:#fff;
+    color: $gray;
+    text-align:left;
+    a:hover {
+        color:$asher;
+    }
+}
+
+h2 {
+    font-size: 150%;
+}
 #greet {
+    color: $asher;
     font-size:300%;
     padding-bottom:0.5em;
 }

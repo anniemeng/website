@@ -598,12 +598,11 @@ a {
 header {
   text-align: center;
   background-size: cover;
-  color: #555f61;
+  color: #a7b0b2;
   margin: 0 auto;
-  padding: 5%;
 }
 
-/* line 25, ../scss/landing.scss */
+/* line 24, ../scss/landing.scss */
 .h-main {
   display: block;
   font-size: 800%;
@@ -615,112 +614,166 @@ header {
   -webkit-background-clip: text;
 }
 
-/***** ABOUT *****/
-/* line 37, ../scss/landing.scss */
-#about {
-  padding: 7em 2em;
-  color: #555f61;
-  text-align: center;
-}
-/* line 41, ../scss/landing.scss */
-#about a:hover {
-  color: #2876ff;
+/* line 35, ../scss/landing.scss */
+h3 {
+  color: #a7b0b2;
 }
 
-/* line 46, ../scss/landing.scss */
+/***** NAV ******/
+/* line 40, ../scss/landing.scss */
+.navbar {
+  position: fixed;
+  padding: 2%;
+  background: #fafafa;
+  border-bottom: 1px solid #e5e8ec;
+  color: #8c979a;
+  font-family: "Chivo", sans-serif;
+}
+
+/* line 50, ../scss/landing.scss */
+.menuItem {
+  display: inline-block;
+  padding: 0 1em;
+}
+/* line 54, ../scss/landing.scss */
+.menuItem a {
+  color: #8c979a;
+}
+
+/* line 59, ../scss/landing.scss */
+#home {
+  float: left;
+}
+
+/* line 63, ../scss/landing.scss */
+.right {
+  float: right;
+}
+
+/* line 67, ../scss/landing.scss */
+.stuckMenu {
+  left: 0px;
+  width: 100%;
+}
+
+/* line 72, ../scss/landing.scss */
+.active a {
+  text-decoration: line-through;
+}
+
+/***** ABOUT *****/
+/* line 77, ../scss/landing.scss */
+#about {
+  padding: 4em 2em;
+  background: #fff;
+  color: #8c979a;
+  text-align: left;
+}
+/* line 82, ../scss/landing.scss */
+#about a:hover {
+  color: #555f61;
+}
+
+/* line 87, ../scss/landing.scss */
+h2 {
+  font-size: 150%;
+}
+
+/* line 90, ../scss/landing.scss */
 #greet {
+  color: #555f61;
   font-size: 300%;
   padding-bottom: 0.5em;
 }
 
-/* line 51, ../scss/landing.scss */
+/* line 96, ../scss/landing.scss */
 #links {
   padding-top: 1em;
 }
 
 @media (max-width: 350px) {
-  /* line 57, ../scss/landing.scss */
+  /* line 102, ../scss/landing.scss */
   .h-main, #greet {
     font-size: 130%;
   }
 
-  /* line 61, ../scss/landing.scss */
+  /* line 106, ../scss/landing.scss */
   #first {
     display: block;
   }
 
-  /* line 66, ../scss/landing.scss */
+  /* line 111, ../scss/landing.scss */
   h2, p {
     font-size: 80%;
   }
 }
 @media (min-width: 350px) and (max-width: 500px) {
-  /* line 72, ../scss/landing.scss */
+  /* line 117, ../scss/landing.scss */
   .h-main {
     font-size: 400%;
   }
 
-  /* line 76, ../scss/landing.scss */
+  /* line 121, ../scss/landing.scss */
   #first {
     display: block;
     margin-bottom: 0;
   }
 
-  /* line 82, ../scss/landing.scss */
+  /* line 127, ../scss/landing.scss */
   #greet {
     font-size: 200%;
   }
 
-  /* line 86, ../scss/landing.scss */
+  /* line 131, ../scss/landing.scss */
   h2 {
     font-size: 100%;
   }
 
-  /* line 90, ../scss/landing.scss */
+  /* line 135, ../scss/landing.scss */
   .descrip p, .button {
     font-size: 80%;
   }
 }
 @media (min-width: 500px) and (max-width: 690px) {
-  /* line 96, ../scss/landing.scss */
+  /* line 141, ../scss/landing.scss */
   .h-main {
     font-size: 600%;
   }
 
-  /* line 100, ../scss/landing.scss */
+  /* line 145, ../scss/landing.scss */
   #first {
     display: block;
     margin-bottom: 0;
   }
 
-  /* line 105, ../scss/landing.scss */
+  /* line 150, ../scss/landing.scss */
   #greet {
     font-size: 230%;
   }
 
-  /* line 109, ../scss/landing.scss */
+  /* line 154, ../scss/landing.scss */
   h2 {
     font-size: 130%;
   }
 }
 @media (min-width: 690px) and (max-width: 930px) {
-  /* line 115, ../scss/landing.scss */
+  /* line 160, ../scss/landing.scss */
   .h-main {
     font-size: 600%;
   }
 
-  /* line 119, ../scss/landing.scss */
+  /* line 164, ../scss/landing.scss */
   #greet {
     font-size: 250%;
   }
 
-  /* line 123, ../scss/landing.scss */
+  /* line 168, ../scss/landing.scss */
   h2 {
     font-size: 150%;
   }
 }
 /**** PORTFOLIO ***/
-/* line 129, ../scss/landing.scss */
+/* line 174, ../scss/landing.scss */
 #port {
   max-width: 100%;
   margin-left: auto;
@@ -738,18 +791,18 @@ header {
   display: table;
   clear: both;
 }
-/* line 138, ../scss/landing.scss */
+/* line 183, ../scss/landing.scss */
 #port a:hover {
   color: white;
 }
 
 @media (min-width: 1100px) {
-  /* line 145, ../scss/landing.scss */
+  /* line 190, ../scss/landing.scss */
   #port {
     padding: 2em 5em;
   }
 }
-/* line 150, ../scss/landing.scss */
+/* line 195, ../scss/landing.scss */
 .descrip {
   float: left;
   display: block;
@@ -764,7 +817,7 @@ header {
   margin-right: 0;
 }
 
-/* line 157, ../scss/landing.scss */
+/* line 202, ../scss/landing.scss */
 .other {
   float: left;
   display: block;
@@ -780,7 +833,7 @@ header {
 }
 
 @media (max-width: 800px) {
-  /* line 166, ../scss/landing.scss */
+  /* line 211, ../scss/landing.scss */
   .descrip {
     float: left;
     display: block;
@@ -792,17 +845,17 @@ header {
     margin-right: 0;
   }
 }
-/* line 171, ../scss/landing.scss */
+/* line 216, ../scss/landing.scss */
 hr {
   width: 3em;
 }
 
-/* line 175, ../scss/landing.scss */
+/* line 220, ../scss/landing.scss */
 p {
   margin-bottom: 0;
 }
 
-/* line 180, ../scss/landing.scss */
+/* line 225, ../scss/landing.scss */
 h2.temp {
   text-align: center;
 }
