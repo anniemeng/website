@@ -254,13 +254,13 @@ hr {
 
 .proj-content {
     width: 50%;
-    float: left;
     margin-right: 10%;
+    float:left;
 }
 
 .proj-img {
-    width: 40%;
     float:left;
+    width: 40%;
     
     img {
       float:center;
@@ -299,8 +299,64 @@ hr {
     }
 }
 
-// media queries
-@media (min-width:1000px) {
+//media queries
+
+@media (max-width: 400px) {
+    .proj-img img{
+        width: 250px;
+        height: 200px;
+    }
+    
+    .proj-title {
+        margin-top: 5%;
+        font-size: 150%;
+    }
+    
+    .time {
+        font-size: 80%;
+    }
+    
+    #title {
+        margin-top: 15%;
+        font-size: 200%;
+    }
+}
+
+@media (min-width: 400px) and (max-width:460px) {
+    .proj-title {
+        margin-top: 5%;
+        font-size: 200%;
+    }
+    
+    .time {
+        font-size: 100%;
+    }
+    
+    #title {
+        margin-top: 10%;
+        font-size: 250%;
+    }
+}
+
+@media (min-width:440px) and (max-width:1000px) {
+    .time {
+        display:block;
+    }
+    
+    .divider {
+       display:none;
+    }
+    
+    .proj-content, .proj-img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .proj-img {
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+        border-bottom: 4px double $pearl;
+    }
 }
 
 /**** PORTFOLIO ***/

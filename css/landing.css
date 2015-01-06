@@ -866,14 +866,14 @@ hr {
 /* line 255, ../scss/landing.scss */
 .proj-content {
   width: 50%;
-  float: left;
   margin-right: 10%;
+  float: left;
 }
 
 /* line 261, ../scss/landing.scss */
 .proj-img {
-  width: 40%;
   float: left;
+  width: 40%;
 }
 /* line 265, ../scss/landing.scss */
 .proj-img img {
@@ -914,4 +914,70 @@ hr {
   background: #4dd3ff;
 }
 
+@media (max-width: 400px) {
+  /* line 305, ../scss/landing.scss */
+  .proj-img img {
+    width: 250px;
+    height: 200px;
+  }
+
+  /* line 310, ../scss/landing.scss */
+  .proj-title {
+    margin-top: 5%;
+    font-size: 150%;
+  }
+
+  /* line 315, ../scss/landing.scss */
+  .time {
+    font-size: 80%;
+  }
+
+  /* line 319, ../scss/landing.scss */
+  #title {
+    margin-top: 15%;
+    font-size: 200%;
+  }
+}
+@media (min-width: 400px) and (max-width: 460px) {
+  /* line 326, ../scss/landing.scss */
+  .proj-title {
+    margin-top: 5%;
+    font-size: 200%;
+  }
+
+  /* line 331, ../scss/landing.scss */
+  .time {
+    font-size: 100%;
+  }
+
+  /* line 335, ../scss/landing.scss */
+  #title {
+    margin-top: 10%;
+    font-size: 250%;
+  }
+}
+@media (min-width: 440px) and (max-width: 1000px) {
+  /* line 342, ../scss/landing.scss */
+  .time {
+    display: block;
+  }
+
+  /* line 346, ../scss/landing.scss */
+  .divider {
+    display: none;
+  }
+
+  /* line 350, ../scss/landing.scss */
+  .proj-content, .proj-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 355, ../scss/landing.scss */
+  .proj-img {
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    border-bottom: 4px double #dadedf;
+  }
+}
 /**** PORTFOLIO ***/
