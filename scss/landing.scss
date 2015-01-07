@@ -300,7 +300,6 @@ hr {
 }
 
 //media queries
-
 @media (max-width: 400px) {
     .proj-img img{
         width: 250px;
@@ -358,6 +357,9 @@ hr {
         border-bottom: 4px double $pearl;
     }
 }
+
+// modal dialogs
+
 
 /**** PORTFOLIO ***/
 /*#port {
