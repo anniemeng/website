@@ -603,11 +603,12 @@ a:hover {
 header {
   text-align: center;
   background-size: cover;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: #a7b0b2;
   margin: 0 auto;
 }
 
-/* line 29, ../scss/landing.scss */
+/* line 30, ../scss/landing.scss */
 .h-main {
   display: block;
   font-size: 800%;
@@ -618,14 +619,15 @@ header {
   -webkit-background-clip: text;
 }
 
-/* line 39, ../scss/landing.scss */
+/* line 40, ../scss/landing.scss */
 h3 {
   color: #a7b0b2;
 }
 
 /***** NAV ******/
-/* line 44, ../scss/landing.scss */
+/* line 45, ../scss/landing.scss */
 .navbar {
+  font-family: "Chivo", sans-serif;
   position: fixed;
   padding: 2%;
   background: #fafafa;
@@ -634,39 +636,39 @@ h3 {
   z-index: 100;
 }
 
-/* line 53, ../scss/landing.scss */
+/* line 55, ../scss/landing.scss */
 .menuItem {
   display: inline-block;
   padding: 0 1em;
 }
-/* line 57, ../scss/landing.scss */
+/* line 59, ../scss/landing.scss */
 .menuItem a {
   color: #8c979a;
 }
 
-/* line 62, ../scss/landing.scss */
+/* line 64, ../scss/landing.scss */
 #home {
   float: left;
 }
 
-/* line 66, ../scss/landing.scss */
+/* line 68, ../scss/landing.scss */
 .right {
   float: right;
 }
 
-/* line 70, ../scss/landing.scss */
+/* line 72, ../scss/landing.scss */
 .stuckMenu {
   left: 0px;
   width: 100%;
 }
 
-/* line 75, ../scss/landing.scss */
+/* line 77, ../scss/landing.scss */
 .active a {
   text-decoration: line-through;
 }
 
 /***** ABOUT *****/
-/* line 80, ../scss/landing.scss */
+/* line 82, ../scss/landing.scss */
 #arrow-right, #arrow-right2 {
   width: 0;
   height: 0;
@@ -675,132 +677,154 @@ h3 {
   border-left: 100px solid #6cffff;
 }
 
-/* line 88, ../scss/landing.scss */
+/* line 90, ../scss/landing.scss */
 #arrow-right2 {
   margin-top: -50px;
   margin-left: 25px;
   border-left-color: #2876ff;
 }
 
-/* line 95, ../scss/landing.scss */
+/* line 97, ../scss/landing.scss */
 #about-descrip {
   padding: 5%;
   padding-top: 2%;
   background: #fff;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: #8c979a;
   text-align: left;
 }
-/* line 101, ../scss/landing.scss */
+/* line 104, ../scss/landing.scss */
 #about-descrip a:hover {
   color: #555f61;
 }
 
-/* line 106, ../scss/landing.scss */
+/* line 109, ../scss/landing.scss */
 h2 {
   font-size: 150%;
 }
 
-/* line 110, ../scss/landing.scss */
+/* line 113, ../scss/landing.scss */
 #greet {
   color: #555f61;
   font-size: 300%;
   padding-bottom: 0.5em;
 }
 
-/* line 116, ../scss/landing.scss */
+/* line 119, ../scss/landing.scss */
 #subtitle {
   display: block;
   font-size: 70%;
 }
 
-/* line 121, ../scss/landing.scss */
+/* line 124, ../scss/landing.scss */
 #links {
   padding-top: 1em;
 }
 
 @media (max-width: 350px) {
-  /* line 127, ../scss/landing.scss */
+  /* line 130, ../scss/landing.scss */
+  #about-descrip > h2, p {
+    font-size: 80%;
+  }
+
+  /* line 134, ../scss/landing.scss */
   .h-main, #greet {
     font-size: 130%;
   }
 
-  /* line 131, ../scss/landing.scss */
+  /* line 138, ../scss/landing.scss */
   #first {
     display: block;
   }
-
-  /* line 136, ../scss/landing.scss */
-  h2, p {
-    font-size: 80%;
-  }
 }
 @media (min-width: 350px) and (max-width: 500px) {
-  /* line 142, ../scss/landing.scss */
+  /* line 144, ../scss/landing.scss */
   .h-main {
     font-size: 400%;
   }
 
-  /* line 146, ../scss/landing.scss */
+  /* line 148, ../scss/landing.scss */
   #first {
     display: block;
     margin-bottom: 0;
   }
 
-  /* line 152, ../scss/landing.scss */
+  /* line 153, ../scss/landing.scss */
+  #about-descrip > h2 {
+    font-size: 100%;
+  }
+
+  /* line 157, ../scss/landing.scss */
   #greet {
     font-size: 200%;
   }
 
-  /* line 156, ../scss/landing.scss */
-  h2 {
-    font-size: 100%;
-  }
-
-  /* line 160, ../scss/landing.scss */
+  /* line 161, ../scss/landing.scss */
   .descrip p, .button {
     font-size: 80%;
   }
+
+  /* line 165, ../scss/landing.scss */
+  #about-descrip {
+    margin-bottom: 10%;
+  }
 }
 @media (min-width: 500px) and (max-width: 690px) {
-  /* line 166, ../scss/landing.scss */
+  /* line 171, ../scss/landing.scss */
   .h-main {
     font-size: 600%;
   }
 
-  /* line 170, ../scss/landing.scss */
+  /* line 175, ../scss/landing.scss */
   #first {
     display: block;
     margin-bottom: 0;
   }
 
-  /* line 175, ../scss/landing.scss */
+  /* line 180, ../scss/landing.scss */
+  #about-descrip > h2 {
+    font-size: 130%;
+  }
+
+  /* line 184, ../scss/landing.scss */
   #greet {
     font-size: 230%;
   }
-
-  /* line 179, ../scss/landing.scss */
-  h2 {
-    font-size: 130%;
-  }
 }
 @media (min-width: 690px) and (max-width: 930px) {
-  /* line 185, ../scss/landing.scss */
+  /* line 190, ../scss/landing.scss */
   .h-main {
     font-size: 600%;
   }
 
-  /* line 189, ../scss/landing.scss */
+  /* line 194, ../scss/landing.scss */
+  #about-descrip > h2 {
+    font-size: 150%;
+  }
+
+  /* line 198, ../scss/landing.scss */
   #greet {
     font-size: 250%;
   }
+}
+@media (min-width: 1400px) {
+  /* line 204, ../scss/landing.scss */
+  .h-main {
+    font-size: 800%;
+  }
 
-  /* line 193, ../scss/landing.scss */
-  h2 {
-    font-size: 150%;
+  /* line 208, ../scss/landing.scss */
+  #about-descrip > h2 {
+    font-size: 200%;
+  }
+
+  /* line 212, ../scss/landing.scss */
+  #greet {
+    font-size: 350%;
   }
 }
 /**** PROJECTS ****/
-/* line 199, ../scss/landing.scss */
+/* line 218, ../scss/landing.scss */
 #arrow-left, #arrow-left2 {
   position: absolute;
   right: 0;
@@ -811,39 +835,40 @@ h2 {
   border-right: 100px solid #6cffff;
 }
 
-/* line 209, ../scss/landing.scss */
+/* line 228, ../scss/landing.scss */
 #arrow-left2 {
   margin-top: -50px;
   margin-right: 25px;
   border-right-color: #2876ff;
 }
 
-/* line 216, ../scss/landing.scss */
+/* line 235, ../scss/landing.scss */
 #title {
   font-size: 300%;
   text-align: center;
   color: #555f61;
 }
 
-/* line 222, ../scss/landing.scss */
+/* line 241, ../scss/landing.scss */
 #p-descrip {
   clear: both;
   padding: 10% 0;
 }
 
-/* line 227, ../scss/landing.scss */
+/* line 246, ../scss/landing.scss */
 hr {
   width: 3em;
+  border-width: 2px;
 }
 
 /*** PROJECT BLOCKS ***/
-/* line 232, ../scss/landing.scss */
+/* line 252, ../scss/landing.scss */
 .projects {
   display: block;
   margin: 5% auto;
 }
 
-/* line 237, ../scss/landing.scss */
+/* line 257, ../scss/landing.scss */
 .project {
   padding: 5%;
   width: 100%;
@@ -852,30 +877,31 @@ hr {
   z-index: 5;
 }
 
-/* line 246, ../scss/landing.scss */
+/* line 266, ../scss/landing.scss */
 .proj-title {
   font-size: 200%;
   padding-bottom: 0.5em;
 }
 
-/* line 251, ../scss/landing.scss */
+/* line 271, ../scss/landing.scss */
 .time {
   color: #a7b0b2;
 }
 
-/* line 255, ../scss/landing.scss */
+/* line 275, ../scss/landing.scss */
 .proj-content {
   width: 50%;
   margin-right: 10%;
   float: left;
 }
 
-/* line 261, ../scss/landing.scss */
+/* line 281, ../scss/landing.scss */
 .proj-img {
   float: left;
+  padding-left: 2%;
   width: 40%;
 }
-/* line 265, ../scss/landing.scss */
+/* line 286, ../scss/landing.scss */
 .proj-img img {
   float: center;
   width: 350px;
@@ -887,7 +913,7 @@ hr {
   box-shadow: 3px 3px 3px #777;
 }
 
-/* line 277, ../scss/landing.scss */
+/* line 298, ../scss/landing.scss */
 .btn {
   display: inline-block;
   padding: 2% 3%;
@@ -900,7 +926,7 @@ hr {
   cursor: pointer;
 }
 
-/* line 289, ../scss/landing.scss */
+/* line 310, ../scss/landing.scss */
 .btn-p {
   background: #fff;
   color: #555f61;
@@ -908,76 +934,107 @@ hr {
   border-radius: 5px;
   transition: all ease 0.4s;
 }
-/* line 296, ../scss/landing.scss */
+/* line 317, ../scss/landing.scss */
 .btn-p:hover {
   color: #fff;
   background: #4dd3ff;
 }
 
 @media (max-width: 400px) {
-  /* line 304, ../scss/landing.scss */
+  /* line 325, ../scss/landing.scss */
   .proj-img img {
     width: 250px;
     height: 200px;
   }
 
-  /* line 309, ../scss/landing.scss */
+  /* line 330, ../scss/landing.scss */
   .proj-title {
     margin-top: 5%;
     font-size: 150%;
   }
 
-  /* line 314, ../scss/landing.scss */
+  /* line 335, ../scss/landing.scss */
   .time {
     font-size: 80%;
   }
 
-  /* line 318, ../scss/landing.scss */
+  /* line 339, ../scss/landing.scss */
   #title {
     margin-top: 15%;
     font-size: 200%;
   }
 }
 @media (min-width: 400px) and (max-width: 460px) {
-  /* line 325, ../scss/landing.scss */
+  /* line 346, ../scss/landing.scss */
   .proj-title {
     margin-top: 5%;
-    font-size: 200%;
+    font-size: 180%;
   }
 
-  /* line 330, ../scss/landing.scss */
+  /* line 351, ../scss/landing.scss */
   .time {
-    font-size: 100%;
+    font-size: 90%;
   }
 
-  /* line 334, ../scss/landing.scss */
+  /* line 355, ../scss/landing.scss */
   #title {
     margin-top: 10%;
     font-size: 250%;
   }
 }
 @media (min-width: 440px) and (max-width: 1000px) {
-  /* line 341, ../scss/landing.scss */
+  /* line 362, ../scss/landing.scss */
   .time {
     display: block;
   }
 
-  /* line 345, ../scss/landing.scss */
+  /* line 366, ../scss/landing.scss */
   .divider {
     display: none;
   }
 
-  /* line 349, ../scss/landing.scss */
+  /* line 370, ../scss/landing.scss */
   .proj-content, .proj-img {
     width: 100%;
     text-align: center;
   }
 
-  /* line 354, ../scss/landing.scss */
+  /* line 375, ../scss/landing.scss */
   .proj-img {
     margin-bottom: 5%;
     padding-bottom: 5%;
     border-bottom: 4px double #dadedf;
+  }
+}
+@media (min-width: 1400px) {
+  /* line 383, ../scss/landing.scss */
+  #title {
+    font-size: 400%;
+  }
+
+  /* line 387, ../scss/landing.scss */
+  .project {
+    margin-bottom: 10%;
+  }
+
+  /* line 391, ../scss/landing.scss */
+  .proj-title {
+    font-size: 250%;
+  }
+
+  /* line 395, ../scss/landing.scss */
+  .proj-descrip {
+    font-size: 130%;
+  }
+
+  /* line 399, ../scss/landing.scss */
+  .proj-img {
+    padding-left: 8%;
+  }
+  /* line 402, ../scss/landing.scss */
+  .proj-img img {
+    width: 400px;
+    height: 350px;
   }
 }
 /**** PORTFOLIO ***/

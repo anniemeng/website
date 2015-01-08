@@ -42,7 +42,7 @@
     <div id="arrow-right"></div>
     <div id="arrow-right2"></div> 
     <section id="about-descrip">
-        <h2 id="greet">Hey! I'm Annie. <span id="subtitle">(Or legally Zhiyu)</span></h2>
+        <h1 id="greet">Hey! I'm Annie. <span id="subtitle">(Or legally Zhiyu)</span></h1>
         <h2>Currently studying <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank">Digital Media Design</a> (CS + Art) @ University of Pennsylvania.</h2> 
          <h2>From the land of ketchup chips and poutine (<a href="http://www.buzzfeed.com/alexbesant/40-reasons-to-move-to-toronto-jugk" target="_blank">Toronto, Canada</a>).</h2> 
          <h2>Interested in education & creativity.</h2>
@@ -71,22 +71,35 @@
                 <div class="proj-content">
                     <div class="proj-title">Maya Visualizer<span class="divider"> | </span><span class="time">Dec 2014</span></div>
                     <div class="proj-descrip">
-                        <p>Extracts GDELT data on news involving the US to analyze the progression of US' foreign relations over time and produces a 3D keyframe animation on Maya</p>
+                        <p>Extracts GDELT data on news involving the US to analyze the progression of US foreign relations over time and produces a 3D keyframe animation on Maya</p>
                         <p>Stack: Python</p>
                         
                         <!--modal-->
-                        <div class="remodal" data-remodal-id="modal">
-                            <h1>Remodal</h1>
-                            <p>
-                              Flat, responsive, lightweight, fast, easy customizable modal window plugin
-                              with declarative state notation and hash tracking.
+                        <div class="remodal" data-remodal-id="maya-modal">
+                            <h1 class="h1-r">Maya Visualizer</h1>
+                            <h2 class="h2-r">Idea</h2>
+                            <p class="p-r">
+                                I found out about <a href="http://gdeltproject.org/" target="_blank">GDELT</a> from Google's Hack4Humanity. It's this awesome resource that's essentially a database of news from all over the world and their connections to people, organizations, etc. There's a ton of queries you could do to find interesting data and relationships.
+                            </p>
+                            <p class="p-r">
+                                GDELT data mostly comes in two forms: Event Database and Global Knowledge Graph. They have extensive <a href="http://data.gdeltproject.org/documentation/GDELT-Data_Format_Codebook.pdf">documentation</a> on the different categories the data cover. I was particularly interested in their QuadClass attribute: an event classification as Material Cooperation, Material Conflict, Verbal Cooperation or Verbal Conflict.
+                            </p>
+                            <p class="p-r">
+                                At the time I was learning Maya and found out about their extensive Python API - almost anything you do by hand, you can do with Python commands. Python became a great way to parse through that data and create a keyframe animation with.
+                            </p>
+                            <h2 class="h2-r">Method</h2>
+                            <p class="p-r">
+                                GDELT provides amazing analysis services allowing you to reduce the data to a smaller subset based on what you're looking for. Their <a href="http://analysis.gdeltproject.org/module-event-exporter.html">Event Record Exporter</a> emails you a CSV file of all matching records based on your search criteria by running Google Big Query.
+                            <p class="p-r">
+                            </p>
+                            
+                            <h2 class="h2-r">Things Learned</h2>
+                            <p class="p-r">
                             </p>
                             <br>
-                            <a class="remodal-cancel" href="#">Cancel</a>
-                            <a class="remodal-confirm" href="#">OK</a>
+                            <a class="remodal-confirm" href="#">Got it!</a>
                         </div>
-                        <a href="#modal">Trigger</a>
-                        <button class="btn btn-p btn-maya">More Info</button>
+                        <button class="btn btn-p" onclick="location.href='index.html#maya-modal'">More Info</button>
                     </div>
                 </div>
                 <div class="proj-img">

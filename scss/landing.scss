@@ -22,6 +22,7 @@ a {
 header {
   text-align:center;
   background-size:cover;
+  font-family: $header-font-family;
   color:$silver;
   margin: 0 auto;
 }
@@ -42,6 +43,7 @@ h3 {
 
 /***** NAV ******/
 .navbar {
+    font-family: $header-font;
     position:fixed;
     padding: 2%;
     background: $back;
@@ -96,6 +98,7 @@ h3 {
     padding: 5%;
     padding-top: 2%;
     background:#fff;
+    font-family: $header-font-family;
     color: $gray;
     text-align:left;
     a:hover {
@@ -124,17 +127,16 @@ h2 {
 
 // ABOUT MEDIA QUERIES
 @media (max-width:350px) {
+  #about-descrip > h2, p {
+    font-size:80%;
+  }
+
   .h-main , #greet {
     font-size:130%;
   }
     
   #first {
     display:block;
-  }
-  
-
-  h2, p {
-    font-size:80%;
   }
 }
 
@@ -147,18 +149,21 @@ h2 {
     display:block;
       margin-bottom:0;
   }
-  
-
+    
+  #about-descrip > h2 {
+    font-size:100%;
+  }
+      
   #greet {
     font-size:200%;
   }
 
-  h2{
-    font-size:100%;
-  }
-    
   .descrip p, .button {
       font-size:80%;
+  }
+
+  #about-descrip {
+    margin-bottom: 10%;
   }
 }
 
@@ -171,13 +176,13 @@ h2 {
     display:block;
     margin-bottom:0;
   }
-  
-  #greet {
-    font-size:230%;
+      
+  #about-descrip > h2 {
+    font-size:130%;
   }
     
-  h2 {
-    font-size:130%;
+  #greet {
+    font-size:230%;
   }
 }
 
@@ -186,13 +191,27 @@ h2 {
     font-size:600%;
   }
   
+  #about-descrip > h2 {
+    font-size:150%;
+  }
+    
   #greet {
     font-size:250%;
   }
-    
-  h2 {
-    font-size:150%;
+}
+
+@media (min-width: 1400px) {
+  .h-main  {
+    font-size:800%;
   }
+  
+  #about-descrip > h2 {
+    font-size: 200%;
+  }
+    
+  #greet {
+    font-size: 350%;
+  } 
 }
 
 /**** PROJECTS ****/
@@ -226,6 +245,7 @@ h2 {
 
 hr {
     width:3em;
+    border-width: 2px;
 }
 
 /*** PROJECT BLOCKS ***/
@@ -260,6 +280,7 @@ hr {
 
 .proj-img {
     float:left;
+    padding-left: 2%;
     width: 40%;
     
     img {
@@ -324,11 +345,11 @@ hr {
 @media (min-width: 400px) and (max-width:460px) {
     .proj-title {
         margin-top: 5%;
-        font-size: 200%;
+        font-size: 180%;
     }
     
     .time {
-        font-size: 100%;
+        font-size: 90%;
     }
     
     #title {
@@ -358,8 +379,32 @@ hr {
     }
 }
 
-// modal dialogs
+@media (min-width: 1400px) {
+    #title {
+        font-size: 400%;
+    }
+    
+    .project {
+        margin-bottom: 10%; 
+    }
 
+    .proj-title {
+        font-size: 250%;
+    }
+
+    .proj-descrip  {
+        font-size: 130%;
+    }
+    
+    .proj-img {
+        padding-left: 8%;
+        
+        img{
+            width: 400px;
+            height: 350px;
+        }
+    }
+}
 
 /**** PORTFOLIO ***/
 /*#port {

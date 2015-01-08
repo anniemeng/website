@@ -1,182 +1,164 @@
-@import url(http://fonts.googleapis.com/css?family=Exo+2:700,400&subset=latin,cyrillic);
-
-/* ==========================================================================
-   Remodal necessary styles
-   ========================================================================== */
-
+@import url(http://fonts.googleapis.com/css?family=Chivo);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,100);
 /* Hide scroll bar */
-
+/* line 6, ../scss/jquery.remodal.scss */
 html.remodal-is-locked,
 body.remodal-is-locked {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Anti FOUC */
-
+/* line 13, ../scss/jquery.remodal.scss */
 .remodal,
 [data-remodal-id] {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /* Necessary styles of the overlay */
-
+/* line 19, ../scss/jquery.remodal.scss */
 .remodal-overlay {
-    position: fixed;
-    z-index: 9999;
-    top: -5000px;
-    right: -5000px;
-    bottom: -5000px;
-    left: -5000px;
-
-    display: none;
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+  display: none;
 }
 
 /* Necessary styles of the wrapper */
-
+/* line 32, ../scss/jquery.remodal.scss */
 .remodal-wrapper {
-    position: fixed;
-    z-index: 10000;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    display: none;
-    overflow: auto;
-
-    text-align: center;
-
-    -webkit-overflow-scrolling: touch;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
 }
 
+/* line 48, ../scss/jquery.remodal.scss */
 .remodal-wrapper:after {
-    display: inline-block;
-
-    height: 100%;
-    margin-left: -0.05em;
-
-    content: "";
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  content: "";
 }
 
 /* Fix iPad, iPhone glitches */
-
+/* line 60, ../scss/jquery.remodal.scss */
 .remodal-overlay,
 .remodal-wrapper {
-    -webkit-transform: translateZ(0px);
+  -webkit-transform: translateZ(0px);
 }
 
 /* Necessary styles of the modal dialog */
-
+/* line 66, ../scss/jquery.remodal.scss */
 .remodal {
-    position: relative;
-
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Anti-zoom. Font-size should be >= 16px. */
-
+/* line 79, ../scss/jquery.remodal.scss */
 .remodal select,
 .remodal textarea,
 .remodal input,
 .remodal select:focus,
 .remodal textarea:focus,
 .remodal input:focus {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 /* ==========================================================================
    Remodal default theme
    ========================================================================== */
-
 /* Default theme font */
-
-.remodal,
-.remodal * {
-    font-family: "Exo 2", sans-serif;
-}
-
 /* Background for effects */
-
+/* line 91, ../scss/jquery.remodal.scss */
 .remodal-bg {
-    -webkit-transition: -webkit-filter 0.2s ease-out;
-    -moz-transition: -moz-filter 0.2s ease-out;
-    -o-transition: -o-filter 0.2s ease-out;
-    transition: filter 0.2s ease-out;
+  -webkit-transition: -webkit-filter 0.2s ease-out;
+  -moz-transition: -moz-filter 0.2s ease-out;
+  -o-transition: -o-filter 0.2s ease-out;
+  transition: filter 0.2s ease-out;
 }
 
+/* line 98, ../scss/jquery.remodal.scss */
 body.remodal-is-active .remodal-bg {
-    -webkit-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
+  -webkit-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
 }
 
 /* Default theme styles of the overlay */
-
+/* line 108, ../scss/jquery.remodal.scss */
 .remodal-overlay {
-    -webkit-transition: opacity 0.2s ease-out;
-    -moz-transition: opacity 0.2s ease-out;
-    -o-transition: opacity 0.2s ease-out;
-    transition: opacity 0.2s ease-out;
-
-    opacity: 0;
-    background: rgba(33, 36, 46, 0.95);
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  background: rgba(33, 36, 46, 0.95);
 }
 
+/* line 118, ../scss/jquery.remodal.scss */
 body.remodal-is-active .remodal-overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Default theme styles of the modal dialog */
-
+/* line 124, ../scss/jquery.remodal.scss */
 .remodal {
-    font-size: 16px;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 100%;
-    padding: 35px;
-
-    -webkit-transition: -webkit-transform 0.2s ease-out, opacity 0.2s ease-out;
-    -moz-transition: -moz-transform 0.2s ease-out, opacity 0.2s ease-out;
-    -o-transition: -o-transform 0.2s ease-out, opacity 0.2s ease-out;
-    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
-    -webkit-transform: scale(0.95);
-    -moz-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    -o-transform: scale(0.95);
-    transform: scale(0.95);
-
-    opacity: 0;
-    color: #182a3c;
-    background: #f4f4f4;
-    background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  padding: 5%;
+  overflow-y: scroll;
+  -webkit-transition: -webkit-transform 0.2s ease-out, opacity 0.2s ease-out;
+  -moz-transition: -moz-transform 0.2s ease-out, opacity 0.2s ease-out;
+  -o-transition: -o-transform 0.2s ease-out, opacity 0.2s ease-out;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+  opacity: 0;
+  color: #182a3c;
+  background: #f4f4f4;
+  background-clip: padding-box;
 }
 
+/* line 149, ../scss/jquery.remodal.scss */
 body.remodal-is-active .remodal {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-
-    opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
 }
 
 /* Vertical align of the modal dialog */
-
+/* line 162, ../scss/jquery.remodal.scss */
 .remodal,
 .remodal-wrapper:after {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /* Close button */
-
+/* line 168, ../scss/jquery.remodal.scss */
 .remodal-close {
-    position: absolute;
+  visibility: hidden;
+    /*position: absolute;
     top: 5px;
     left: 5px;
 
@@ -190,11 +172,10 @@ body.remodal-is-active .remodal {
     text-decoration: none;
 
     -webkit-border-radius: 50%;
-    border-radius: 50%;
+    border-radius: 50%;*/
 }
 
-.remodal-close:after {
-    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+/*.remodal-close:after {
     font-size: 28px;
     line-height: 28px;
 
@@ -208,107 +189,130 @@ body.remodal-is-active .remodal {
     transition: all 0.2s ease-out;
     text-decoration: none;
 
-    color: #3e5368;
+    color: #4DD3FF;
 }
 
 .remodal-close:hover,
 .remodal-close:active {
-    background: #3e5368;
+    background: #4DD3FF;
 }
 
 .remodal-close:hover.remodal-close:after,
 .remodal-close:active.remodal-close:after {
     color: #f4f4f4;
-}
-
+}*/
 /* Dialog buttons */
-
+/* line 217, ../scss/jquery.remodal.scss */
 .remodal-confirm,
 .remodal-cancel {
-    font-size: 10pt;
-
-    display: inline-block;
-
-    width: 120px;
-    margin: 0 0 5px 0;
-    padding: 9px 0;
-
-    cursor: pointer;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    text-align: center;
-    text-decoration: none;
-
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    background-clip: padding-box;
+  display: inline-block;
+  width: 120px;
+  margin: 0 0 5px 0;
+  padding: 9px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
 }
 
+/* line 238, ../scss/jquery.remodal.scss */
 .remodal-confirm {
-    color: #16a085;
-    border: 2px solid #16a085;
-    background: #f4f4f4;
+  color: #4DD3FF;
+  border: 2px solid #4DD3FF;
+  background: #f4f4f4;
 }
 
+/* line 245, ../scss/jquery.remodal.scss */
 .remodal-confirm:hover,
 .remodal-confirm:active {
-    color: #f4f4f4;
-    background: #16a085;
+  color: #f4f4f4;
+  background: #4DD3FF;
 }
 
+/* line 250, ../scss/jquery.remodal.scss */
 .remodal-cancel {
-    color: #c0392b;
-    border: 2px solid #c0392b;
-    background: #f4f4f4;
+  color: #c0392b;
+  border: 2px solid #c0392b;
+  background: #f4f4f4;
 }
 
+/* line 257, ../scss/jquery.remodal.scss */
 .remodal-cancel:hover,
 .remodal-cancel:active {
-    color: #f4f4f4;
-    background: #c0392b;
+  color: #f4f4f4;
+  background: #c0392b;
 }
 
 /* Media queries
    ========================================================================== */
-
-@media only screen and (min-width: 40.063em) /* min-width 641px */ {
-    .remodal {
-        max-width: 700px;
-        min-height: 0;
-        margin: 20px auto;
-
-        -webkit-border-radius: 6px;
-        border-radius: 6px;
-    }
-}
-
-/* IE8
-   ========================================================================== */
-
-.lt-ie9 .remodal-overlay {
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F021242E, endColorstr=#F021242E);
-}
-
-.lt-ie9 .remodal {
-    width: 700px;
+@media only screen and (min-width: 40.063em) {
+  /* line 266, ../scss/jquery.remodal.scss */
+  .remodal {
+    max-width: 70%;
     min-height: 0;
     margin: 20px auto;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+  }
+}
+/* IE8
+   ========================================================================== */
+/* line 279, ../scss/jquery.remodal.scss */
+.lt-ie9 .remodal-overlay {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F021242E, endColorstr=#F021242E);
 }
 
+/* line 283, ../scss/jquery.remodal.scss */
+.lt-ie9 .remodal {
+  width: 70%;
+  min-height: 0;
+  margin: 20px auto;
+}
+
+/* line 289, ../scss/jquery.remodal.scss */
 .lt-ie9 .remodal-close:after {
-    margin: auto;
-
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
 
+/* line 296, ../scss/jquery.remodal.scss */
 .lt-ie9 .remodal-close:hover,
 .lt-ie9 .remodal-close:active {
-    background: transparent;
+  background: transparent;
 }
 
+/* line 301, ../scss/jquery.remodal.scss */
 .lt-ie9 .remodal-close:hover.remodal-close:after,
 .lt-ie9 .remodal-close:active.remodal-close:after {
-    color: #3e5368;
+  color: #3e5368;
+}
+
+/** text style **/
+/* line 306, ../scss/jquery.remodal.scss */
+.h1-r, .h2-r {
+  font-family: "Chivo", sans-serif;
+  font-weight: normal;
+}
+
+/* line 311, ../scss/jquery.remodal.scss */
+.h1-r {
+  margin-bottom: 1em;
+}
+
+/* line 315, ../scss/jquery.remodal.scss */
+.h2-r {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+/* line 320, ../scss/jquery.remodal.scss */
+.p-r {
+  text-align: left;
 }
