@@ -127,7 +127,7 @@ h2 {
 
 // ABOUT MEDIA QUERIES
 @media (max-width:350px) {
-  #about-descrip > h2, p {
+  #about-descrip > h2, #links > h2, p {
     font-size:80%;
   }
 
@@ -150,7 +150,7 @@ h2 {
       margin-bottom:0;
   }
     
-  #about-descrip > h2 {
+  #about-descrip > h2, #links > h2 {
     font-size:100%;
   }
       
@@ -177,12 +177,16 @@ h2 {
     margin-bottom:0;
   }
       
-  #about-descrip > h2 {
+  #about-descrip > h2, #links > h2 {
     font-size:130%;
   }
     
   #greet {
     font-size:230%;
+  }
+
+  #about-descrip {
+    margin-bottom: 10%;
   }
 }
 
@@ -191,12 +195,16 @@ h2 {
     font-size:600%;
   }
   
-  #about-descrip > h2 {
+  #about-descrip > h2, #links > h2 {
     font-size:150%;
   }
     
   #greet {
     font-size:250%;
+  }
+    
+  #about-descrip {
+    margin-bottom: 10%;
   }
 }
 
@@ -205,7 +213,7 @@ h2 {
     font-size:800%;
   }
   
-  #about-descrip > h2 {
+  #about-descrip > h2, #links > h2 {
     font-size: 200%;
   }
     

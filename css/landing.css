@@ -723,7 +723,7 @@ h2 {
 
 @media (max-width: 350px) {
   /* line 130, ../scss/landing.scss */
-  #about-descrip > h2, p {
+  #about-descrip > h2, #links > h2, p {
     font-size: 80%;
   }
 
@@ -750,7 +750,7 @@ h2 {
   }
 
   /* line 153, ../scss/landing.scss */
-  #about-descrip > h2 {
+  #about-descrip > h2, #links > h2 {
     font-size: 100%;
   }
 
@@ -782,7 +782,7 @@ h2 {
   }
 
   /* line 180, ../scss/landing.scss */
-  #about-descrip > h2 {
+  #about-descrip > h2, #links > h2 {
     font-size: 130%;
   }
 
@@ -790,41 +790,51 @@ h2 {
   #greet {
     font-size: 230%;
   }
+
+  /* line 188, ../scss/landing.scss */
+  #about-descrip {
+    margin-bottom: 10%;
+  }
 }
 @media (min-width: 690px) and (max-width: 930px) {
-  /* line 190, ../scss/landing.scss */
+  /* line 194, ../scss/landing.scss */
   .h-main {
     font-size: 600%;
   }
 
-  /* line 194, ../scss/landing.scss */
-  #about-descrip > h2 {
+  /* line 198, ../scss/landing.scss */
+  #about-descrip > h2, #links > h2 {
     font-size: 150%;
   }
 
-  /* line 198, ../scss/landing.scss */
+  /* line 202, ../scss/landing.scss */
   #greet {
     font-size: 250%;
   }
+
+  /* line 206, ../scss/landing.scss */
+  #about-descrip {
+    margin-bottom: 10%;
+  }
 }
 @media (min-width: 1400px) {
-  /* line 204, ../scss/landing.scss */
+  /* line 212, ../scss/landing.scss */
   .h-main {
     font-size: 800%;
   }
 
-  /* line 208, ../scss/landing.scss */
-  #about-descrip > h2 {
+  /* line 216, ../scss/landing.scss */
+  #about-descrip > h2, #links > h2 {
     font-size: 200%;
   }
 
-  /* line 212, ../scss/landing.scss */
+  /* line 220, ../scss/landing.scss */
   #greet {
     font-size: 350%;
   }
 }
 /**** PROJECTS ****/
-/* line 218, ../scss/landing.scss */
+/* line 226, ../scss/landing.scss */
 #arrow-left, #arrow-left2 {
   position: absolute;
   right: 0;
@@ -835,40 +845,40 @@ h2 {
   border-right: 100px solid #6cffff;
 }
 
-/* line 228, ../scss/landing.scss */
+/* line 236, ../scss/landing.scss */
 #arrow-left2 {
   margin-top: -50px;
   margin-right: 25px;
   border-right-color: #2876ff;
 }
 
-/* line 235, ../scss/landing.scss */
+/* line 243, ../scss/landing.scss */
 #title {
   font-size: 300%;
   text-align: center;
   color: #555f61;
 }
 
-/* line 241, ../scss/landing.scss */
+/* line 249, ../scss/landing.scss */
 #p-descrip {
   clear: both;
   padding: 10% 0;
 }
 
-/* line 246, ../scss/landing.scss */
+/* line 254, ../scss/landing.scss */
 hr {
   width: 3em;
   border-width: 2px;
 }
 
 /*** PROJECT BLOCKS ***/
-/* line 252, ../scss/landing.scss */
+/* line 260, ../scss/landing.scss */
 .projects {
   display: block;
   margin: 5% auto;
 }
 
-/* line 257, ../scss/landing.scss */
+/* line 265, ../scss/landing.scss */
 .project {
   padding: 5%;
   width: 100%;
@@ -877,31 +887,31 @@ hr {
   z-index: 5;
 }
 
-/* line 266, ../scss/landing.scss */
+/* line 274, ../scss/landing.scss */
 .proj-title {
   font-size: 200%;
   padding-bottom: 0.5em;
 }
 
-/* line 271, ../scss/landing.scss */
+/* line 279, ../scss/landing.scss */
 .time {
   color: #a7b0b2;
 }
 
-/* line 275, ../scss/landing.scss */
+/* line 283, ../scss/landing.scss */
 .proj-content {
   width: 50%;
   margin-right: 10%;
   float: left;
 }
 
-/* line 281, ../scss/landing.scss */
+/* line 289, ../scss/landing.scss */
 .proj-img {
   float: left;
   padding-left: 2%;
   width: 40%;
 }
-/* line 286, ../scss/landing.scss */
+/* line 294, ../scss/landing.scss */
 .proj-img img {
   float: center;
   width: 350px;
@@ -913,7 +923,7 @@ hr {
   box-shadow: 3px 3px 3px #777;
 }
 
-/* line 298, ../scss/landing.scss */
+/* line 306, ../scss/landing.scss */
 .btn {
   display: inline-block;
   padding: 2% 3%;
@@ -926,7 +936,7 @@ hr {
   cursor: pointer;
 }
 
-/* line 310, ../scss/landing.scss */
+/* line 318, ../scss/landing.scss */
 .btn-p {
   background: #fff;
   color: #555f61;
@@ -934,72 +944,72 @@ hr {
   border-radius: 5px;
   transition: all ease 0.4s;
 }
-/* line 317, ../scss/landing.scss */
+/* line 325, ../scss/landing.scss */
 .btn-p:hover {
   color: #fff;
   background: #4dd3ff;
 }
 
 @media (max-width: 400px) {
-  /* line 325, ../scss/landing.scss */
+  /* line 333, ../scss/landing.scss */
   .proj-img img {
     width: 250px;
     height: 200px;
   }
 
-  /* line 330, ../scss/landing.scss */
+  /* line 338, ../scss/landing.scss */
   .proj-title {
     margin-top: 5%;
     font-size: 150%;
   }
 
-  /* line 335, ../scss/landing.scss */
+  /* line 343, ../scss/landing.scss */
   .time {
     font-size: 80%;
   }
 
-  /* line 339, ../scss/landing.scss */
+  /* line 347, ../scss/landing.scss */
   #title {
     margin-top: 15%;
     font-size: 200%;
   }
 }
 @media (min-width: 400px) and (max-width: 460px) {
-  /* line 346, ../scss/landing.scss */
+  /* line 354, ../scss/landing.scss */
   .proj-title {
     margin-top: 5%;
     font-size: 180%;
   }
 
-  /* line 351, ../scss/landing.scss */
+  /* line 359, ../scss/landing.scss */
   .time {
     font-size: 90%;
   }
 
-  /* line 355, ../scss/landing.scss */
+  /* line 363, ../scss/landing.scss */
   #title {
     margin-top: 10%;
     font-size: 250%;
   }
 }
 @media (min-width: 440px) and (max-width: 1000px) {
-  /* line 362, ../scss/landing.scss */
+  /* line 370, ../scss/landing.scss */
   .time {
     display: block;
   }
 
-  /* line 366, ../scss/landing.scss */
+  /* line 374, ../scss/landing.scss */
   .divider {
     display: none;
   }
 
-  /* line 370, ../scss/landing.scss */
+  /* line 378, ../scss/landing.scss */
   .proj-content, .proj-img {
     width: 100%;
     text-align: center;
   }
 
-  /* line 375, ../scss/landing.scss */
+  /* line 383, ../scss/landing.scss */
   .proj-img {
     margin-bottom: 5%;
     padding-bottom: 5%;
@@ -1007,31 +1017,31 @@ hr {
   }
 }
 @media (min-width: 1400px) {
-  /* line 383, ../scss/landing.scss */
+  /* line 391, ../scss/landing.scss */
   #title {
     font-size: 400%;
   }
 
-  /* line 387, ../scss/landing.scss */
+  /* line 395, ../scss/landing.scss */
   .project {
     margin-bottom: 10%;
   }
 
-  /* line 391, ../scss/landing.scss */
+  /* line 399, ../scss/landing.scss */
   .proj-title {
     font-size: 250%;
   }
 
-  /* line 395, ../scss/landing.scss */
+  /* line 403, ../scss/landing.scss */
   .proj-descrip {
     font-size: 130%;
   }
 
-  /* line 399, ../scss/landing.scss */
+  /* line 407, ../scss/landing.scss */
   .proj-img {
     padding-left: 8%;
   }
-  /* line 402, ../scss/landing.scss */
+  /* line 410, ../scss/landing.scss */
   .proj-img img {
     width: 400px;
     height: 350px;
