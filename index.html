@@ -11,6 +11,7 @@
   <!--CSS-->
   <link rel="stylesheet" href="css/landing.css">
   <link rel="stylesheet" href="css/jquery.remodal.css">
+  <link rel="stylesheet" href="css/pace-theme1.css">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
         <h1 id="greet">Hey! I'm Annie. <span id="subtitle">(Or legally Zhiyu)</span></h1>
         <h2>Currently studying <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank">Digital Media Design</a> (CS + Art) @ University of Pennsylvania.</h2> 
          <h2>From the land of ketchup chips and poutine (<a href="http://www.buzzfeed.com/alexbesant/40-reasons-to-move-to-toronto-jugk" target="_blank">Toronto, Canada</a>).</h2> 
-         <h2>Interested in education & creativity.</h2>
+        <h2>Interested in <a href="education/index" target="_blank" class="button">education</a> & creativity.</h2>
          <h2>Kayaking and tea fanatic.</h2>
          <div id="links">
          <h2>Find me here:</h2>
@@ -76,7 +77,7 @@
                         <p>Stack: Python</p>
                         
                         <!--modal-->
-                        <div class="remodal" data-remodal-id="maya-modal">
+                        <!--<div class="remodal" data-remodal-id="maya-modal">
                             <h1 class="h1-r">Maya Visualizer</h1>
                             <h2 class="h2-r">Idea</h2>
                             <p class="p-r">
@@ -100,7 +101,7 @@
                             <br>
                             <a class="remodal-confirm" href="#">Got it!</a>
                         </div>
-                        <button class="btn btn-p" onclick="location.href='index.html#maya-modal'">More Info</button>
+                        <button class="btn btn-p" onclick="location.href='index.html#maya-modal'">More Info</button>-->
                     </div>
                 </div>
                 <div class="proj-img">
@@ -121,7 +122,7 @@
                     </div>
                 </div>
                 <div class="proj-img">
-                    <img src="img/sound1.jpg">
+                    <img src="img/proj/playkit.png">
                 </div>
             </div><!--project-->
             
@@ -137,7 +138,7 @@
                 </div>
             </div>
             <div class="proj-img">
-                <img src="img/sound1.jpg">
+                <img src="img/proj/ican.png">
             </div>
         </div><!--project-->
             
@@ -247,9 +248,9 @@
         
             
         </div><!--projects-->
-    </section>
-</div>
-
+    </section><!--p-descrip-->
+</div><!--proj-->
+        
 <!-- OVERVIEW -->
 <!--<div id="port">
  <div class="descrip">
@@ -282,7 +283,16 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/jquery.remodal.js"></script>
     <script src="js/stickUp.js"></script>
+    <script src="js/pace.js"></script>
     <script>
+        if (Pace) {
+            Pace.on('done', function(){
+              $(".remodal-bg").css("visibility", "visible").hide().fadeIn(2000);
+            });
+        } else {
+             $(".remodal-bg").css("visibility", "visible");
+        }
+        
         $(document).ready(adjustHeight);
         $(window).resize(adjustHeight);
         

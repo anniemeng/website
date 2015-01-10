@@ -4,6 +4,11 @@
 @import "base/base";
 @import "neat/neat";
 
+// for loader
+.remodal-bg {
+    visibility: hidden;
+}
+
 /*******TOP HEADING********/
 body {
     font-family: $header-font;
@@ -31,8 +36,9 @@ header {
   display:block;
   font-size:800%;
   font-family:$header-font;
+  color: $med-b;
   -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(transparent,                         transparent), url("../img/download2.png")                     repeat 25% 25%;
+  background: -webkit-linear-gradient(transparent,                         transparent), url("../img/download2.png") repeat 25% 25%;
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
 }
@@ -131,12 +137,20 @@ h2 {
     font-size:80%;
   }
 
-  .h-main , #greet {
+  .h-main {
+    font-size:300%;
+  }
+    
+  #greet {
     font-size:130%;
   }
     
   #first {
     display:block;
+  }
+
+  #about-descrip {
+    margin-bottom: 10%;
   }
 }
 
@@ -159,7 +173,7 @@ h2 {
   }
 
   .descrip p, .button {
-      font-size:80%;
+    font-size:80%;
   }
 
   #about-descrip {
@@ -316,6 +330,8 @@ hr {
 }
 
 .btn-p {
+    // temporary
+    visibility:hidden;
     background: #fff;
     color: $asher;
     border: 2px solid $light-b;
@@ -348,6 +364,25 @@ hr {
         margin-top: 15%;
         font-size: 200%;
     }
+    
+    .time {
+        display:block;
+    }
+    
+    .divider {
+       display:none;
+    }
+    
+    .proj-content, .proj-img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .proj-img {
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+        border-bottom: 4px double $pearl;
+    }
 }
 
 @media (min-width: 400px) and (max-width:460px) {
@@ -364,9 +399,29 @@ hr {
         margin-top: 10%;
         font-size: 250%;
     }
+    
+    .time {
+        display:block;
+    }
+    
+    .divider {
+       display:none;
+    }
+    
+    .proj-content, .proj-img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .proj-img {
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+        border-bottom: 4px double $pearl;
+    }
 }
 
-@media (min-width:440px) and (max-width:1000px) {
+// change to single view
+@media (min-width: 460px) and (max-width:1000px) {
     .time {
         display:block;
     }
