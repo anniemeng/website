@@ -428,6 +428,7 @@ hr {
 
 .btn-p {
     // temporary
+    display:none;
     //visibility:hidden;
     background: #fff;
     color: $asher;
@@ -604,7 +605,7 @@ hr {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
     .project {
         margin: 10% auto;
     }
