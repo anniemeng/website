@@ -317,10 +317,9 @@ body {
   color: #333333;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
-  line-height: 1.5;
 }
 
-/* line 15, ../scss/base/_typography.scss */
+/* line 14, ../scss/base/_typography.scss */
 h1,
 h2,
 h3,
@@ -333,42 +332,42 @@ h6 {
   text-rendering: optimizeLegibility;
 }
 
-/* line 22, ../scss/base/_typography.scss */
+/* line 21, ../scss/base/_typography.scss */
 h1 {
   font-size: 2.25em;
 }
 
-/* line 26, ../scss/base/_typography.scss */
+/* line 25, ../scss/base/_typography.scss */
 h2 {
   font-size: 2em;
 }
 
-/* line 30, ../scss/base/_typography.scss */
+/* line 29, ../scss/base/_typography.scss */
 h3 {
   font-size: 1.75em;
 }
 
-/* line 34, ../scss/base/_typography.scss */
+/* line 33, ../scss/base/_typography.scss */
 h4 {
   font-size: 1.5em;
 }
 
-/* line 38, ../scss/base/_typography.scss */
+/* line 37, ../scss/base/_typography.scss */
 h5 {
   font-size: 1.25em;
 }
 
-/* line 42, ../scss/base/_typography.scss */
+/* line 41, ../scss/base/_typography.scss */
 h6 {
   font-size: 1em;
 }
 
-/* line 46, ../scss/base/_typography.scss */
+/* line 45, ../scss/base/_typography.scss */
 p {
   margin: 0 0 0.75em;
 }
 
-/* line 50, ../scss/base/_typography.scss */
+/* line 49, ../scss/base/_typography.scss */
 a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
@@ -376,24 +375,24 @@ a {
   color: #477dca;
   text-decoration: none;
 }
-/* line 55, ../scss/base/_typography.scss */
+/* line 54, ../scss/base/_typography.scss */
 a:hover {
   color: #2c5999;
 }
-/* line 59, ../scss/base/_typography.scss */
+/* line 58, ../scss/base/_typography.scss */
 a:active, a:focus {
   color: #2c5999;
   outline: none;
 }
 
-/* line 66, ../scss/base/_typography.scss */
+/* line 65, ../scss/base/_typography.scss */
 img,
 picture {
   margin: 0;
   max-width: 100%;
 }
 
-/* line 71, ../scss/base/_typography.scss */
+/* line 70, ../scss/base/_typography.scss */
 blockquote {
   border-left: 2px solid #dddddd;
   color: #595959;
@@ -401,12 +400,12 @@ blockquote {
   padding-left: 0.75em;
 }
 
-/* line 78, ../scss/base/_typography.scss */
+/* line 77, ../scss/base/_typography.scss */
 cite {
   color: #737373;
   font-style: italic;
 }
-/* line 82, ../scss/base/_typography.scss */
+/* line 81, ../scss/base/_typography.scss */
 cite:before {
   content: "\2014 \00A0";
 }

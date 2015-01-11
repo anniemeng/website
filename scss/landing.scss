@@ -337,7 +337,8 @@ h2 {
 
 #p-descrip {
     clear:both;
-    padding: 10% 0;
+    padding: 0;
+    padding-top: 10%;
 }
 
 hr {
@@ -349,86 +350,105 @@ hr {
 .projects {
     display: block;
     margin: 5% auto;
+    margin-bottom: 0;
 }
 
 .project {
-    padding: 5%;
     width: 100%;
-    height: 300px;
     margin: 5% auto;
-    z-index:5;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
-// headings
+// screenshot
+.proj-img {
+    width: 650px;
+    margin: 0 auto;
+    
+    //laptop design
+    padding-top: 10px;
+    background: $head-g;
+    text-align: center;
+    border: 20px solid $head-g;
+    border-bottom: none;
+    border-top-width: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 1;
+    box-shadow: 0 0 0 4px $silver, 0 0 0 7px $pearl;
+
+    img {
+        padding-top: 5px;
+        display:block;
+        width: 100%;
+        max-height: 400px;
+        min-height: 400px;
+        margin: 0 auto;
+    }
+}
+
+// project descriptions
+.proj-content {
+    z-index: 100;
+}
+
 .proj-title {
-    font-size:200%;
-    padding-bottom: 0.5em;
+    margin: 0;
+    padding: 0.5em;
+    font-size: 200%;
+    background: url(../img/trianglify.png) no-repeat 50% 50%;
+    background-size: cover;
 }
 
 .time {
-    color: $silver;
+    color: #fff;
 }
 
-.proj-content {
-    width: 50%;
-    margin-right: 10%;
-    float:left;
-}
-
-.proj-img {
-    float:left;
-    padding-left: 2%;
-    width: 40%;
+.proj-descrip {
+    padding: 1em;
+    background: $asher;
+    color: #fff;
     
-    img {
-      float:center;
-      width: 350px;
-      height: 300px;
-      border: 15px solid $lilia;
-      border-bottom: 45px solid $lilia;
-      -webkit-box-shadow: 3px 3px 3px #777;
-         -moz-box-shadow: 3px 3px 3px #777;
-              box-shadow: 3px 3px 3px #777;
+    a:hover {
+        color: #fff;
     }
 }
 
 .btn {
     display: inline-block;
-    padding: 2% 3%;
-    margin: 2% auto;
-    margin-bottom: 5%;
+    padding: 1%;
+    margin: 1% auto;
     text-align: center;
-    text-transform: uppercase;
-    font-weight:normal;
+    font-weight: normal;
     outline: none;
     cursor: pointer;
 }
 
 .btn-p {
     // temporary
-    visibility:hidden;
+    //visibility:hidden;
     background: #fff;
     color: $asher;
-    border: 2px solid $light-b;
+    border: 2px solid $dull-light;
 	border-radius: 5px;
 	transition: all ease 0.4s;
     
     &:hover {
         color: #fff;
-        background: $light-b;
+        background: $dull-light;
     }
 }
 
 //media queries
-@media (max-width: 400px) {
-    .proj-img img{
-        width: 250px;
-        height: 200px;
+@media (max-width: 400px) {   
+    .proj-title {
+        font-size: 150%;
     }
     
-    .proj-title {
-        margin-top: 5%;
-        font-size: 150%;
+    .proj-content {
+        text-align:center;
     }
     
     .time {
@@ -447,23 +467,15 @@ hr {
     .divider {
        display:none;
     }
-    
-    .proj-content, .proj-img {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .proj-img {
-        margin-bottom: 5%;
-        padding-bottom: 5%;
-        border-bottom: 4px double $pearl;
-    }
 }
 
 @media (min-width: 400px) and (max-width:460px) {
     .proj-title {
-        margin-top: 5%;
         font-size: 180%;
+    }
+    
+    .proj-content {
+        text-align:center;
     }
     
     .time {
@@ -482,21 +494,13 @@ hr {
     .divider {
        display:none;
     }
-    
-    .proj-content, .proj-img {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .proj-img {
-        margin-bottom: 5%;
-        padding-bottom: 5%;
-        border-bottom: 4px double $pearl;
-    }
 }
 
-// change to single view
-@media (min-width: 460px) and (max-width:1000px) {
+@media (min-width: 460px) and (max-width:850px) {
+    .proj-content {
+        text-align:center;
+    }
+    
     .time {
         display:block;
     }
@@ -504,26 +508,11 @@ hr {
     .divider {
        display:none;
     }
-    
-    .proj-content, .proj-img {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .proj-img {
-        margin-bottom: 5%;
-        padding-bottom: 5%;
-        border-bottom: 4px double $pearl;
-    }
 }
 
 @media (min-width: 1400px) {
     #title {
         font-size: 400%;
-    }
-    
-    .project {
-        margin-bottom: 10%; 
     }
 
     .proj-title {
@@ -533,13 +522,99 @@ hr {
     .proj-descrip  {
         font-size: 130%;
     }
+}
+
+// LAPTOP MEDIA QUERIES
+@media (max-width: 401px) {
+    .project {
+        margin: 10% auto;
+    }
     
     .proj-img {
-        padding-left: 8%;
+        width: 250px;
+
+        //laptop design
+        padding-top: 1px;
+        border-width: 10px;
+        border-bottom: none;
+        border-top-width: 1px;
+        box-shadow: 0 0 0 3px $silver, 0 0 0 6px $pearl;
+        i {
+            font-size: 20%;
+        }
+
+        img {
+            max-height: 150px;
+            min-height: 150px;
+            padding-top: 1px;
+        }
+    }
+}
+
+@media (min-width:401px) and (max-width: 560px) {
+    .project {
+        margin: 10% auto;
+    } 
+    
+    .proj-img {
+        width: 350px;
+
+        //laptop design
+        padding-top: 2px;
+        border-width: 15px;
+        border-bottom: none;
+        border-top-width: 1px;
+        box-shadow: 0 0 0 4px $silver, 0 0 0 7px $pearl;
+        i {
+            font-size: 40%;
+        }
+
+        img {
+            max-height: 230px;
+            min-height: 230px;
+            padding-top: 2px;
+        }
+    }
+}
+
+@media (min-width: 560px) and (max-width: 750px) {
+    .project {
+        margin: 10% auto;
+    }
+    
+    .proj-img {
+        width: 500px;
+
+        //laptop design
+        padding-top: 2px;
+        border-width: 15px;
+        border-bottom: none;
+        border-top-width: 1px;
+        box-shadow: 0 0 0 4px $silver, 0 0 0 7px $pearl;
+
+        i {
+            font-size: 60%;
+        }
         
-        img{
-            width: 400px;
-            height: 350px;
+        img {
+            max-height: 300px;
+            min-height: 300px;
+            padding-top: 2px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .project {
+        margin: 10% auto;
+    }
+    
+    .proj-img {
+        width: 1000px;
+        
+        img {
+            max-height: 600px;
+            min-height: 600px;
         }
     }
 }
