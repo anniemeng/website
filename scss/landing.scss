@@ -16,7 +16,7 @@ body {
 }
 
 a {
-    color:$light-b;  
+    color:$dull-med;  
     text-decoration: none;
     
     &:hover {
@@ -26,26 +26,26 @@ a {
 
 header {
   text-align:center;
+  background: url("../img/trianglify.png") no-repeat 50% 50%;
   background-size:cover;
   font-family: $header-font-family;
-  color:$silver;
+  color: #fff;
   margin: 0 auto;
 }
 
 .h-main {
   display:block;
-  font-size:800%;
+  font-size:600%;
   font-family:$header-font;
-  color: $med-b;
-  -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(transparent,                         transparent), url("../img/download2.png") repeat 25% 25%;
-  background: -o-linear-gradient(transparent, transparent);
-  -webkit-background-clip: text;
+  //text-transform: uppercase;
+  font-weight: bold;
+  //color: #fff;
+  //-webkit-text-fill-color: transparent;
+  //background: -webkit-linear-gradient(transparent,                         transparent), url("../img/download2.png") repeat 25% 25%;
+  //background: -o-linear-gradient(transparent, transparent);
+  //-webkit-background-clip: text;
 }
 
-h3 {
-    color: $silver;
-}
 
 /***** NAV ******/
 .navbar {
@@ -85,19 +85,48 @@ h3 {
 }
 
 /***** ABOUT *****/
+#about {
+    padding-top: 5%;
+}
+
 #arrow-right {
 	width: 0; 
 	height: 0; 
 	border-top: 60px solid transparent;
 	border-bottom: 60px solid transparent;
-	border-left: 100px solid $bright-b;
+	border-left: 100px solid $dull-light;
 }
 
 #arrow-right2 {
     @extend #arrow-right;
     margin-top:-50px;
     margin-left: 25px;
-    border-left-color: $dark-b;
+    border-left-color: $dull-dark;
+}
+
+@media (max-width: 350px) {
+    #arrow-right {
+        border-top-width: 30px;
+        border-bottom-width: 30px;
+        border-left-width: 50px;
+    }
+    
+    #arrow-right2 {
+        margin-top: -30px;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 550px) {
+    #arrow-right {
+        border-top-width: 40px;
+        border-bottom-width: 40px;
+        border-left-width: 70px;
+    }
+    
+    #arrow-right2 {
+        margin-top: -35px;
+    }
 }
 
 #about-descrip {
@@ -141,12 +170,20 @@ h2 {
     font-size:300%;
   }
     
+  h3 {
+    padding-top: 1em;
+    font-size: 120%;
+  }
+    
   #greet {
     font-size:130%;
   }
     
-  #first {
+  #first, #second {
     display:block;
+    padding: 0 initial;
+    margin: 0 initial;
+    line-height: 1em;
   }
 
   #about-descrip {
@@ -159,9 +196,16 @@ h2 {
     font-size:400%;
   }
   
-  #first {
+  #first, #second {
     display:block;
-      margin-bottom:0;
+    margin:0 initial;
+    padding: 0 initial;
+    line-height: 1em;
+  }
+    
+  h3 {
+    font-size: 150%;
+    padding-top: 1em;
   }
     
   #about-descrip > h2, #links > h2 {
@@ -183,12 +227,18 @@ h2 {
 
 @media (min-width:500px) and (max-width:690px) {
   .h-main  {
-    font-size:600%;
+    font-size:500%;
   }
     
-  #first {
+  #first, #second {
     display:block;
-    margin-bottom:0;
+    margin:0 initial;
+    padding: 0 initial;
+    line-height: 1em;
+  }
+    
+  h3 {
+    padding-top: 1em;
   }
       
   #about-descrip > h2, #links > h2 {
@@ -244,14 +294,39 @@ h2 {
 	height: 0; 
 	border-top: 60px solid transparent;
 	border-bottom: 60px solid transparent; 
-	border-right:100px solid $bright-b; 
+	border-right:100px solid $dull-light; 
 }
 
 #arrow-left2 {
     @extend #arrow-left;
     margin-top:-50px;
     margin-right: 25px;
-    border-right-color: $dark-b;
+    border-right-color: $dull-dark;
+}
+
+@media (max-width: 350px) {
+    #arrow-left {
+        border-top-width: 30px;
+        border-bottom-width: 30px;
+        border-right-width: 50px;
+    }
+    
+    #arrow-left2 {
+        margin-top: -30px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 550px) {
+    #arrow-left {
+        border-top-width: 40px;
+        border-bottom-width: 40px;
+        border-right-width: 70px;
+    }
+    
+    #arrow-left2 {
+        margin-top: -40px;
+    }
 }
 
 #title {

@@ -34,8 +34,8 @@
             </div>
         </ul>
       </nav>
-      <h1 class="h-main"><span id="first">Annie</span> Meng</h1>
-    <h3>I like design & code</h3>
+      <h1 class="h-main"><span id="first">Annie</span> <span id="second">Meng</span></h1>
+      <h3>I like design & code</h3>
   </header>
 
 <!--ABOUT SECTION -->
@@ -46,7 +46,7 @@
         <h1 id="greet">Hey! I'm Annie. <span id="subtitle">(Or legally Zhiyu)</span></h1>
         <h2>Currently studying <a href="http://cg.cis.upenn.edu/dmd_program.html" target="_blank">Digital Media Design</a> (CS + Art) @ University of Pennsylvania.</h2> 
          <h2>From the land of ketchup chips and poutine (<a href="http://www.buzzfeed.com/alexbesant/40-reasons-to-move-to-toronto-jugk" target="_blank">Toronto, Canada</a>).</h2> 
-        <h2>Interested in <a href="education/index" target="_blank" class="button">education</a> & creativity.</h2>
+        <h2>Interested in <a href="education/index" target="_blank">education</a> & creativity.</h2>
          <h2>Kayaking and tea fanatic.</h2>
          <div id="links">
          <h2>Find me here:</h2>
@@ -102,6 +102,7 @@
                             <a class="remodal-confirm" href="#">Got it!</a>
                         </div>
                         <button class="btn btn-p" onclick="location.href='index.html#maya-modal'">More Info</button>-->
+                        <button class="btn btn-p">More Info</button>
                     </div>
                 </div>
                 <div class="proj-img">
@@ -299,7 +300,7 @@
         function adjustHeight() {
             var height = $(window).height();
             $("#main").height(height);
-            $(".h-main").css("padding-top", height/3);
+            $(".h-main").css("padding-top", height/2.5);
         }
 
       jQuery(function($) {
