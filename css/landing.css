@@ -1166,15 +1166,15 @@ hr {
   /* line 534, ../scss/landing.scss */
   .proj-img {
     width: 250px;
-    padding-top: 1px;
+    padding-top: 0;
     border-width: 10px;
     border-bottom: none;
-    border-top-width: 1px;
+    border-top-width: 0.5px;
     box-shadow: 0 0 0 3px #a7b0b2, 0 0 0 6px #dadedf;
   }
   /* line 543, ../scss/landing.scss */
   .proj-img i {
-    font-size: 20%;
+    font-size: 30%;
   }
   /* line 547, ../scss/landing.scss */
   .proj-img img {

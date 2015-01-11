@@ -535,13 +535,13 @@ hr {
         width: 250px;
 
         //laptop design
-        padding-top: 1px;
+        padding-top: 0;
         border-width: 10px;
         border-bottom: none;
-        border-top-width: 1px;
+        border-top-width: 0.5px;
         box-shadow: 0 0 0 3px $silver, 0 0 0 6px $pearl;
         i {
-            font-size: 20%;
+            font-size: 30%;
         }
 
         img {
