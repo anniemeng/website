@@ -313,7 +313,8 @@
             $(".h-main").css("padding-top", height/2.5);
         }
         
-        $(document).ready(function() {
+        jQuery(function($) {
+          $(document).ready(function() {
           $('.navbar').stickUp({
             parts: {
               0:'main',
@@ -324,6 +325,7 @@
             itemHover: 'active'
           });
         });  
+        });
     </script>
         
     <!-- Google Analytics-->
